@@ -50,10 +50,10 @@ body {
    -o-transition: 0.5s;
    transition: 0.5s;
 }
-.navbar .navbar-toggler-icon .fa-hamburger {
+/* .navbar .navbar-toggler-icon .fa-hamburger {
    color: #2196f3;
    font-size: 30px;
-}
+} */
 .navbar .navbar-toggler {
    border: 1.5px solid rgba(33, 150, 243, 1);
 }
