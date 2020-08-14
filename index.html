@@ -39,14 +39,7 @@
       <!-- ========== libraries and plugins ==========-->
 
       <!-- fontawesome icons -->
-      <link
-         rel="stylesheet"
-         href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
-      />
-      <link
-         rel="stylesheet"
-         href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      />
+      
 
       <link href="fontawesome/css/all.css" rel="stylesheet" />
 
@@ -84,7 +77,7 @@
                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                   <div class="navbar-nav ml-auto">
                      <a class="nav-link active" href="index.html">
-                        <i class="fas fa-house-user"></i> Home
+                        <i class="fas fa-home"></i> Home
                      </a>
                      <a class="nav-link" href="#about">
                         <i class="far fa-address-card"></i> About</a
@@ -107,15 +100,23 @@
          </nav>
 
          <!-- ==========Intro Section Begins Here========== -->
-         <div class="container">
-            <div>
-               <img class="intro" src="image/profile-image.png" alt="" />
-            </div>
-         </div>
-         <h2>the bog is <span class="type"></span></h2>
 
          <!-- ==========Intro Section Ends Here========== -->
       </header>
+      <div class="intro">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6">
+                  <h2>the bog is <span class="type"></span></h2>
+               </div>
+               <div class="col-lg-6">
+                  <div>
+                     <img src="image/profile-image.png" alt="" />
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
 
       <!-- ========== Header Section Ends Here ========== -->
 
@@ -308,13 +309,13 @@
                         <form action="index.html" method="POST">
                            <input
                               type="name"
-                              placeholder="Name"
+                              placeholder="Name... "
                               name="#"
                               required
                            />
                            <input
                               type="email"
-                              placeholder="Enter Your Email"
+                              placeholder="Enter Your Email..."
                               name="#"
                               required
                            />
