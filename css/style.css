@@ -30,7 +30,7 @@ body {
    box-shadow: 2px 0px 10px 1px rgba(0, 0, 0, 0.2);
    z-index: 10000;
    transition: all 0.5s;
-   background-color: #f5f5f5;
+   background-color: #ececec;
 }
 .navbar .navbar-nav .nav-link {
    color: #212121;
@@ -50,10 +50,10 @@ body {
    -o-transition: 0.5s;
    transition: 0.5s;
 }
-/* .navbar .navbar-toggler-icon .fa-hamburger {
+.navbar .navbar-toggler-icon .fa-bars {
    color: #2196f3;
    font-size: 30px;
-} */
+}
 .navbar .navbar-toggler {
    border: 1.5px solid rgba(33, 150, 243, 1);
 }
@@ -406,6 +406,7 @@ body {
    padding: 5px 25px;
    border-radius: 20px;
    cursor: pointer;
+   box-shadow: 4px 4px 8px -1px rgba(0, 0, 0), -4px -4px 8px -1px rgba(0, 0, 0);
    box-shadow: 5px 5px 8px -1px rgba(0, 0, 0, 0.4),
       -5px -5px 8px -1px rgba(0, 0, 0, 0.4);
 }
@@ -435,17 +436,17 @@ body {
 
 @media only screen and (max-width: 768px) {
    .navbar .navbar-brand .profile-logo {
-      width: 50px;
-      height: 50px;
+      width: 45px;
+      height: 45px;
    }
    .navbar {
-      height: 76px;
+      height: 71px;
       padding: 0px 15px;
    }
 
    .navbar .navbar-collapse {
       text-align: center;
-      background-color: #f5f5f5;
+      background-color: #ececec;
       border: 2px solid #2196f3;
       border-radius: 5px;
    }
@@ -461,7 +462,7 @@ body {
    }
    .sticky {
       width: 100%;
-      height: 66px;
+      height: 61px;
       transition: all 0.5s;
       padding: 0px 15px;
    }
@@ -472,10 +473,10 @@ body {
       max-width: 90%;
    }
    #footer .footer-social .container a {
-      margin: 5px 10px;
-      height: 25px;
-      width: 25px;
-      font-size: 15px;
+      margin: 5px 20px;
+      height: 30px;
+      width: 30px;
+      font-size: 17px;
    }
    #footer .footer-base {
       padding: 10px 5px;
