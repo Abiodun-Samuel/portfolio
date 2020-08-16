@@ -14,13 +14,22 @@ function myFunction() {
     }
 };
 
-// $(document).ready(function () {
-//     $(".navbar-toggle").on("click", function () {
-//         $(this).toggleClass("active");
-//     });
-// });
-
-
+// ==========back to the top button==========
+$(document).ready(function () {
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 100) {
+            $(".back-top").fadeIn(400);
+        }
+        else {
+            $(".back-top").fadeOut(400);
+        }
+    });
+    $(".back-top").click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 1000);
+    });
+});
 
 
 // ==========type js typing effect========== 
@@ -31,6 +40,7 @@ var typed = new Typed('.type', {
     backSpeed: 60,
     loop: true,
 });
+
 
 // ==========typing effect ends here==========
 
