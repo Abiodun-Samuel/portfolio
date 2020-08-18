@@ -30,7 +30,7 @@ body {
    box-shadow: 2px 0px 10px 1px rgba(0, 0, 0, 0.2);
    z-index: 10000;
    transition: all 0.5s;
-   background-color: #ececec;
+   background-color: #f5f5f5;
 }
 .navbar .navbar-nav .nav-link {
    color: #212121;
@@ -66,7 +66,7 @@ body {
 }
 /*========== Nav Section Style Ends Here==========*/
 
-/* ========== Intro Section Style========== */
+/* ========== Intro Section Style Begins here========== */
 .intro {
    text-align: center;
    padding-top: 300px;
@@ -76,19 +76,111 @@ body {
 }
 /* ========== Intro Section Style Ends========== */
 
+/* ========== Service Section Style Begins here========== */
+#service {
+   padding: 60px 0 60px 0;
+   background: #f8f9fa;
+   color: #212121;
+}
+#service .container .service-header {
+   text-align: center;
+}
+#service .container .service-header h3 {
+   font-weight: 400;
+   text-align: center;
+   display: inline-block;
+   padding: 10px 20px;
+   border: 2.5px solid #ff4081;
+   border-radius: 5px;
+   box-shadow: 4px 4px 8px -1px rgba(0, 0, 0, 0.25),
+      -4px -4px 8px -1px rgba(255, 255, 255);
+}
+
+#service .container .service-header p {
+   text-align: center;
+   margin-top: 30px;
+   font-size: 15px;
+   padding-bottom: 60px;
+}
+
+#service .container .service-box {
+   padding: 30px;
+   position: relative;
+   overflow: hidden;
+   border-radius: 10px;
+   margin: 0 10px 40px 10px;
+   background: #fff;
+   box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+   transition: all 0.3s ease-in-out;
+}
+
+#service .container .service-box:hover {
+   -webkit-transform: translateY(-5px);
+   transform: translateY(-5px);
+   transition: 0.5s;
+}
+
+#service .container .row .icon {
+   text-align: center;
+   font-size: 45px;
+   transition: 0.5s;
+   color: #ff4081;
+}
+
+#service .container .row .title {
+   text-align: center;
+   font-weight: 600;
+   margin: 15px 0px;
+   font-size: 18px;
+   border-bottom: 3px solid #2196f3;
+   padding-bottom: 10px;
+}
+
+#service .container .row .description {
+   font-size: 14px;
+   margin-bottom: 15px;
+   line-height: 2;
+}
+#service .container .row .service-box .service-btn {
+   text-align: center;
+}
+
+#service .container .row .service-box .service-btn input[type='submit'] {
+   background: #ff4081;
+   border: none;
+   outline: none;
+   border-radius: 50px;
+   padding: 6px 25px;
+   color: #f5f5f5;
+   transition: 0.5s;
+   box-shadow: 4px 4px 8px -1px rgba(0, 0, 0, 0.25),
+      -4px -4px 8px -1px rgba(255, 255, 255);
+}
+
+#service .container .row .service-box .service-btn input[type='submit']:hover {
+   transform: scale(0.9);
+   cursor: pointer;
+   box-shadow: inset 4px 4px 8px -1px rgba(0, 0, 0, 0.05),
+      inset -4px -4px 8px -1px rgba(255, 255, 255, 0.5);
+}
+/* ========== Service Section Style Ends here========== */
+
 /* ========== Contact Section Style Begins ========== */
 #contact {
    background: url('../image/contact-background.jpg') center no-repeat;
    background-size: cover;
    /* background-attachment: fixed; */
    color: #212121;
-   padding: 60px 0 100px 0;
+   padding: 60px 0 60px 0;
 }
 
 #contact .contact-header {
    text-align: center;
 }
 #contact .contact-header h3 {
+   font-size: 30px;
+   font-weight: 400;
+   text-align: center;
    display: inline-block;
    padding: 10px 20px;
    border: 2.5px solid #ff4081;
@@ -146,13 +238,9 @@ body {
    .fa-telegram-plane {
    color: #0088cc;
 }
-#contact .container-fluid .row .contact .contact-icons {
-   /* background-color: red; */
-}
 
 #contact .container-fluid .row .contact .form {
    margin-top: 30px;
-   /* background-color: red; */
 }
 #contact .container-fluid .row .contact .form input,
 #contact .container-fluid .row .contact .form textarea {
@@ -466,7 +554,7 @@ body {
 
    .navbar .navbar-collapse {
       text-align: center;
-      background-color: #ececec;
+      background-color: #f5f5f5;
       border: 2px solid #2196f3;
       border-radius: 5px;
    }
