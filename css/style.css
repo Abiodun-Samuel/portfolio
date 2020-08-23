@@ -15,7 +15,6 @@ p,
 body {
    font-family: sans-serif, 'Montserrat';
 }
-
 /*========== global styling ends here==========*/
 
 /*========== Header Section Style Begins Here==========*/
@@ -32,6 +31,9 @@ body {
    transition: all 0.5s;
    background-color: #f5f5f5;
 }
+.navbar .navbar-nav {
+   transition: all 0.5s ease-in;
+}
 .navbar .navbar-nav .nav-link {
    color: #212121;
    padding: 10px 20px;
@@ -41,22 +43,26 @@ body {
 }
 .navbar .navbar-nav .nav-link:hover {
    color: #1976d2;
-   background-color: rgba(0, 0, 0, 0.015);
-   border-bottom: 2.5px solid #ff4081;
-   transform: scale(1.098);
-   -webkit-transition: 0.5s;
-   -moz-transition: 0.5s;
-   -ms-transition: 0.5s;
-   -o-transition: 0.5s;
-   transition: 0.5s;
+   transition: all 0.5s ease-in;
 }
-.navbar .navbar-toggler-icon .fa-bars {
-   color: #2196f3;
-   font-size: 30px;
+
+.navbar .container .nav-contact {
+   display: none;
 }
-.navbar .navbar-toggler {
-   border: 1.5px solid rgba(33, 150, 243, 1);
+.burger {
+   display: none;
+   cursor: pointer;
+   border: 2px solid #2196f3;
 }
+.burger div {
+   width: 25px;
+   height: 3.5px;
+   background-color: #2196f3;
+   margin: 5px;
+   padding: 1.5px;
+   transition: all 0.5s ease;
+}
+
 .sticky {
    top: 0;
    width: 100%;
@@ -70,24 +76,31 @@ body {
 .intro {
    padding-top: 150px;
    padding-bottom: 50px;
-   background: url('../image/background-intro.jpg') center center no-repeat;
+   background-image: url('../image/background-intro.jpg'),
+      linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
+   background-blend-mode: overlay;
+   background-repeat: no-repeat;
+   background-position: center;
    background-size: cover;
+   height: auto;
 }
-.intro .container .intro-box h4,
-.intro .container .intro-box h5 {
-   background-color: rgba(248, 249, 250, 0.95);
+.intro .container .intro-box h5,
+.intro .container .intro-box h6 {
+   background-color: rgba(245, 245, 245, 0.9);
    color: #212121;
    padding: 15px 15px;
    border-radius: 5px;
-   letter-spacing: 2px;
+   line-height: 1.5;
+   /* letter-spacing: 2px; */
    margin-bottom: 15px;
    font-weight: bolder;
+   text-align: center;
 }
 .intro .container .intro-box .typed-cursor {
    color: #ff4081;
 }
 
-.intro .container .intro-box h5 .type {
+.intro .container .intro-box h6 .type {
    color: #ff4081;
 }
 .intro .container .intro-box button {
@@ -117,75 +130,48 @@ body {
 /* ========== Intro Section Style Ends========== */
 
 /* ========== Service Section Style Begins here========== */
-#service {
+#services {
    padding: 30px 0;
-   background: #f8f9fa;
+   background: #f5f5f5;
    color: #212121;
 }
-#service .container .service-header {
+#services .container .services-header {
    text-align: center;
 }
-#service .container .service-header h3 {
-   font-weight: 400;
-   text-align: center;
+#services .container .services-header h4 {
    display: inline-block;
-   padding: 10px 20px;
+   padding: 5px 15px;
    border: 2.5px solid #ff4081;
    border-radius: 5px;
    box-shadow: 4px 4px 8px -1px rgba(0, 0, 0, 0.25),
       -4px -4px 8px -1px rgba(255, 255, 255);
 }
-
-#service .container .service-header p {
-   text-align: center;
-   margin-top: 30px;
-   font-size: 15px;
-   padding-bottom: 60px;
-}
-
-#service .container .service-box {
-   padding: 30px;
-   position: relative;
-   overflow: hidden;
-   border-radius: 10px;
-   margin: 0 10px 40px 10px;
-   background: #fff;
+#services .container .card {
+   padding-top: 10px;
+   background: #f8f9fa;
    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
    transition: all 0.3s ease-in-out;
+   margin-top: 20px;
 }
-
-#service .container .service-box:hover {
+#services .container .card:hover {
    -webkit-transform: translateY(-5px);
    transform: translateY(-5px);
    transition: 0.5s;
 }
-
-#service .container .row .icon {
+#services .container .row .card .icon {
    text-align: center;
-   font-size: 45px;
+   font-size: 40px;
    transition: 0.5s;
    color: #ff4081;
 }
-
-#service .container .row .title {
-   text-align: center;
-   font-weight: 600;
-   margin: 15px 0px;
-   font-size: 18px;
+#services .container .row .card-title {
    border-bottom: 3px solid #2196f3;
-   padding-bottom: 10px;
+   padding-bottom: 5px;
 }
-
-#service .container .row .description {
-   font-size: 14px;
-   margin-bottom: 15px;
-   line-height: 2;
-}
-#service .container .row .service-box .service-btn {
+#services .container .row .card .card-body .service-btn {
    text-align: center;
 }
-
-#service .container .row .service-box .service-btn input[type='submit'] {
+#services .container .row .card .card-body .service-btn input[type='submit'] {
    background: #ff4081;
    border: none;
    outline: none;
@@ -196,12 +182,17 @@ body {
    box-shadow: 4px 4px 8px -1px rgba(0, 0, 0, 0.25),
       -4px -4px 8px -1px rgba(255, 255, 255);
 }
-
-#service .container .row .service-box .service-btn input[type='submit']:hover {
+#services
+   .container
+   .row
+   .card
+   .card-body
+   .service-btn
+   input[type='submit']:hover {
    transform: scale(0.9);
    cursor: pointer;
-   box-shadow: inset 4px 4px 8px -1px rgba(0, 0, 0, 0.05),
-      inset -4px -4px 8px -1px rgba(255, 255, 255, 0.5);
+   box-shadow: inset 4px 4px 8px -1px rgba(0, 0, 0, 0.25),
+      inset -2px -2px 5px -1px rgba(255, 255, 255, 0.5);
 }
 /* ========== Service Section Style Ends here========== */
 /* ========== Patronise  Section Style Ends here========== */
@@ -211,18 +202,19 @@ body {
    color: #f8f9fa;
    text-align: center;
 }
-#Expectation .container h3 {
-   font-weight: 400;
+#Expectation .container .expectation-header {
+   text-align: center;
+}
+#Expectation .container .expectation-header h4 {
    display: inline-block;
-   padding: 10px 15px;
+   padding: 5px 15px;
    border: 2.5px solid #ff4081;
    border-radius: 5px;
    box-shadow: 4px 4px 8px -1px rgba(0, 0, 0, 0.25),
       -4px -4px 8px -1px rgba(255, 255, 255, 0.2);
 }
-
 #Expectation .container .card {
-   margin-top: 10px;
+   margin-top: 20px;
    background: #1976d2;
    border-color: #1976d2;
    border-radius: 10px;
@@ -251,11 +243,15 @@ body {
 
 /* ========== Contact Section Style Begins ========== */
 #contact {
-   background: url('../image/contact-background.jpg') center no-repeat;
-   background-size: cover;
-   /* background-attachment: fixed; */
+   background: url('../image/contact-background.jpg');
+   /* background-size: cover; */
+   background-attachment: fixed;
    color: #212121;
    padding: 30px 0;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 100% 100%;
+   height: auto;
 }
 
 #contact .contact-header {
@@ -404,44 +400,82 @@ body {
    background-size: cover;
    color: #bdbdbd;
    font-size: 14px;
+   padding-top: 30px;
 }
-#footer .footer-main {
-   padding: 60px 0 0px 0;
-}
-#footer .footer-main .footer-logo {
-   width: 120px;
-   height: 120px;
-}
-#footer .footer-main .figcaption {
-   padding: 10px 0px;
-   font-weight: bold;
-   font-size: 18px;
-   letter-spacing: 2;
-}
-
-#footer .footer-main .footer-content {
-   margin-bottom: 15px;
-   padding-top: 20px;
-
-   box-shadow: 3px 3px 8px -1px rgba(0, 0, 0), -3px -3px 8px -1px rgba(0, 0, 0);
-   border: 1px solid rgba(0, 0, 0, 0);
+#footer .card {
+   background-color: inherit;
+   border: none;
    border-radius: 5px;
+   box-shadow: 5px 5px 12px #202020, -5px -5px 12px #222222;
 }
-#footer .footer-main .footer-content p {
-   font-size: 16px;
-   line-height: 24px;
-   margin-bottom: 15px;
+#footer .card .card-body h6 {
+   border-bottom: 3px solid #2196f3;
+   padding: 5px 0px;
+}
+#footer .card .card-body .footer-logo {
+   width: 80px;
+   height: 80px;
+}
+#footer .card .card-body ul li {
+   list-style: none;
+   padding-top: 5px;
+}
+#footer .card .card-body ul li i {
+   color: #2196f3;
+   margin-right: 5px;
+}
+#footer .card .card-body .footer-letter input {
+   padding: 5px 10px;
+   font-size: 13px;
+   border: none;
+   outline: none;
+   border-radius: 5px;
+   margin-bottom: 8px;
+   width: 75%;
+   background-color: #f5f5f5;
+}
+#footer .card .card-body .footer-letter button {
+   background: #ff4081;
+   color: #f5f5f5;
+   border: none;
+   outline: none;
+   font-size: 14px;
+   padding: 5px 25px;
+   border-radius: 20px;
+   cursor: pointer;
+   box-shadow: 5px 5px 8px -1px rgba(0, 0, 0, 0.4),
+      -5px -5px 8px -1px rgba(0, 0, 0, 0.4);
+}
+#footer .card .card-body .footer-letter button:hover {
+   box-shadow: inset 4px 4px 8px -1px rgba(0, 0, 0, 0.25),
+      inset -2px -2px 5px -1px rgba(255, 255, 255, 0.5);
+   transform: scale(0.9);
+   transition: all 0.5s;
+}
+#footer .quick-links {
+   text-align: center;
+}
+#footer .quick-links .container a {
+   color: #bdbdbd;
+   padding: 0px 10px;
+   /* font-size:12px; */
+   border-right: 1.5px solid #2196f3;
+   border-left: 1.5px solid #2196f3;
+   text-decoration: none;
+}
+#footer .quick-links .container a:hover {
+   color: #ff4081;
 }
 
 #footer .footer-social .container {
    display: flex;
    justify-content: center;
-   padding: 10px 0px;
+   padding: 5px 0px;
 }
 #footer .footer-social .container a {
    display: flex;
-   height: 40px;
-   width: 40px;
+   height: 35px;
+   width: 35px;
    margin: 15px;
    border-radius: 6px;
    align-items: center;
@@ -450,24 +484,17 @@ body {
    box-shadow: 4px 4px 8px -1px rgba(0, 0, 0), -4px -4px 8px -1px rgba(0, 0, 0);
    border: 1px solid rgba(0, 0, 0, 0);
    transition: 0.5s;
-   font-size: 25px;
+   font-size: 23px;
    color: #757575;
    background-color: rgba(0, 0, 0, 0.4);
 }
 #footer .footer-social .container a:hover {
-   box-shadow: inset 4px 4px 8px -1px rgba(0, 0, 0, 0.2),
-      inset -4px -4px 8px -1px rgba(0, 0, 0, 0.7);
-   /* -0.5px -0.5px 0px rgba(0, 0, 0, 1), 0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
-      0px 12px 10px -10px rgba(0, 0, 0, 0.05); */
-
-   transform: translateY(2px);
+   box-shadow: inset -4px -4px 8px -1px rgba(0, 0, 0, 0.25),
+      inset 2px 2px 5px -1px rgba(0, 0, 0, 0.25);
    transform: scale(0.98);
 }
 #footer .footer-social .container a:hover .fa-facebook {
    color: #4267b2;
-}
-#footer .footer-social .container a:hover .fa-whatsapp {
-   color: #4ac959;
 }
 #footer .footer-social .container a:hover .fa-twitter {
    color: #00acee;
@@ -481,123 +508,14 @@ body {
 #footer .footer-social .container a:hover .fa-github {
    color: #333;
 }
-
-#footer .footer-main h4 {
-   font-size: 17px;
-   font-weight: bold;
-
-   text-transform: uppercase;
-   position: relative;
-   padding-bottom: 10px;
-}
-#footer .footer-main .sub h4 {
-   border-bottom: 5px solid #2196f3;
-}
-#footer .footer-main .quick-icons {
-   color: #2196f3;
-   margin-right: 10px;
-}
-
-#footer .footer-main .quick-links {
-   margin-bottom: 30px;
-}
-
-#footer .footer-main .quick-links .quick-list {
-   list-style: none;
-   padding: 0;
-   margin-top: 10px;
-}
-
-#footer .footer-main .quick-links .quick-list li {
-   padding: 5px 0;
-}
-
-#footer .footer-main .quick-links .quick-list li:first-child {
-   padding-top: 0;
-}
-#footer .footer-main .quick-links .quick-list a {
-   color: #bdbdbd;
-}
-
-#footer .footer-main .quick-links .quick-list li:hover {
-   -webkit-transition: 0.5s;
-   -moz-transition: 0.5s;
-   -ms-transition: 0.5s;
-   -o-transition: 0.5s;
-   transform: translateY(-3.5px);
-   transform: translateX(-3.5px);
-   transition: 0.5s;
-}
-#footer .footer-main .quick-links .quick-list li a:hover {
-   color: #2196f3;
-   text-decoration: none;
-}
-#footer .footer-main .cont-icons {
-   color: #2196f3;
-   margin-right: 10px;
-}
-
-#footer .footer-main .contact {
-   margin-bottom: 30px;
-}
-
-#footer .footer-main .contact .contact-list {
-   list-style: none;
-   padding: 0;
-   margin-top: 10px;
-}
-
-#footer .footer-main .contact .contact-list li {
-   padding: 5px 0;
-}
-
-#footer .footer-main .contact .contact-list li:first-child {
-   padding-top: 0;
-}
-
-#footer .footer-main .footer-letter {
-   margin-bottom: 30px;
-}
-#footer .footer-main .footer-letter p {
-   margin-top: 10px;
-}
-#footer .footer-main .footer-letter .newsletter_form input {
-   padding: 5px 10px;
-   font-size: 14px;
-   border: none;
-   border-radius: 5px;
-   margin-bottom: 10px;
-   width: 75%;
-}
-#footer .footer-main .footer-letter .newsletter_form button {
-   background: #ff4081;
-   color: #f5f5f5;
-   border: none;
-   outline: none;
-   font-size: 14px;
-   padding: 5px 25px;
-   border-radius: 20px;
-   cursor: pointer;
-   box-shadow: 4px 4px 8px -1px rgba(0, 0, 0), -4px -4px 8px -1px rgba(0, 0, 0);
-   box-shadow: 5px 5px 8px -1px rgba(0, 0, 0, 0.4),
-      -5px -5px 8px -1px rgba(0, 0, 0, 0.4);
-}
-#footer .footer-main .footer-letter .newsletter_form button:hover {
-   box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.1),
-      inset -4px -4px 6px -1px rgba(0, 0, 0, 0.1),
-      -0.5px -0.5px 0px rgba(0, 0, 0, 0.1), 0.5px 0.5px 0px rgba(0, 0, 0, 0.1),
-      0px 12px 10px -10px rgba(0, 0, 0, 0.1);
-   transform: scale(0.9);
-   transition: all 0.5s;
-}
-#footer .footer-base {
+#footer .footer-foot {
    border-top: 3.5px solid #2196f3;
    color: #757575;
    text-align: center;
-   padding: 15px;
+   padding: 10px;
    background-color: rgba(0, 0, 0, 0.7);
 }
-#footer .footer-base .container a {
+#footer .footer-foot .container a {
    text-decoration: none;
    color: #bdbdbd;
 }
@@ -617,8 +535,8 @@ body {
    cursor: pointer;
 }
 .back-top:hover {
-   transform: scale(1.3);
-   color: #1976d2;
+   transform: scale(1.1);
+   color: #2196f3;
 }
 
 /* ==========back to the top button style ends========== */
@@ -629,52 +547,106 @@ body {
 
 @media only screen and (max-width: 768px) {
    .navbar .navbar-brand .profile-logo {
-      width: 45px;
-      height: 45px;
+      width: 40px;
+      height: 40px;
    }
    .navbar {
-      height: 71px;
+      height: 65px;
       padding: 0px 15px;
+      box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.15);
    }
-
-   .navbar .navbar-collapse {
-      text-align: center;
+   .navbar-nav {
+      position: absolute;
+      right: -100%;
+      height: 100vh;
+      top: 65px;
+      width: 65%;
       background-color: #f5f5f5;
-      border: 2px solid #2196f3;
-      border-radius: 5px;
-   }
-
-   .navbar .container .navbar-nav .nav-link {
-      padding: 15px 20px;
+      font-size: 14px;
+      padding-top: 15px;
    }
    .navbar .container .navbar-nav .nav-link:hover {
       color: #1976d2;
-      border-bottom: 2px solid #ff4081;
-      transform: translatey(-5px);
       transition: 0.5s;
+   }
+   .burger {
+      display: block;
+   }
+   .nav-active {
+      right: 0px;
+   }
+   .toggle .line1 {
+      transform: rotate(-45deg) translate(-5px, 6px);
+      background-color: #ff4081;
+   }
+   .toggle .line2 {
+      opacity: 0;
+   }
+   .toggle .line3 {
+      transform: rotate(45deg) translate(-5px, -6px);
+      background-color: #ff4081;
+   }
+   .burg {
+      border: 2px solid #ff4081;
+   }
+   .navbar .container .nav-contact {
+      display: block;
+      padding-left: 15px;
+      font-size: 13px;
+   }
+   .navbar .container .nav-contact ul li {
+      list-style: none;
+   }
+   .navbar .container .nav-contact a {
+      padding: 0px 5px;
+      color: #757575;
+      font-size: 14px;
+   }
+   .navbar .container .nav-contact a:hover .fa-facebook {
+      color: #4267b2;
+   }
+   .navbar .container .nav-contact a:hover .fa-whatsapp {
+      color: #4ac959;
+   }
+   .navbar .container .nav-contact a:hover .fa-twitter {
+      color: #00acee;
+   }
+   .navbar .container .nav-contact a:hover .fa-instagram {
+      color: #e1306c;
+   }
+   .navbar .container .nav-contact a:hover .fa-linkedin {
+      color: #2867b2;
+   }
+   .navbar .container .nav-contact a:hover .fa-github {
+      color: #333;
    }
    .sticky {
       width: 100%;
-      height: 61px;
+      height: 55px;
       transition: all 0.5s;
       padding: 0px 15px;
    }
+   .sticky .navbar-nav {
+      height: 500px;
+      top: 55px;
+      transition: all 0.5s;
+   }
+   /* ==========Media Queries for Nav Ends here section==========  */
 
-   /* ==========Media Queries for intro section==========  */
-
-   /* ========== footer Section Media Query  ========== */
-
-   #footer .footer-main .footer-content {
-      max-width: 90%;
+   /* ==========  Media Query footer Section  ========== */
+   #footer {
+      font-size: 13px;
    }
    #footer .footer-social .container a {
-      margin: 5px 20px;
       height: 30px;
       width: 30px;
-      font-size: 17px;
+      font-size: 15px;
    }
-   #footer .footer-base {
+   #footer .footer-foot {
       padding: 10px 5px;
       font-size: 10px;
+   }
+   #footer .quick-links .container a {
+      font-size: 12px;
    }
 }
