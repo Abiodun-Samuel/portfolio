@@ -1,3 +1,25 @@
+// ========== Nav Toggle effects ==========
+
+const navSlide = () => {
+
+    const burger = document.querySelector(".burger");
+    const navmenu = document.querySelector(".navbar-nav");
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const burgerborder = document.querySelector(".burger");
+
+    // toggle nav
+    burger.addEventListener("click", () => {
+
+        navmenu.classList.toggle('nav-active');
+        burger.classList.toggle('toggle');
+        burgerborder.classList.toggle('burg');
+        navLinks.animate
+
+    });
+}
+navSlide();
+
+
 // ========== Navbar scroll effects ==========
 
 window.onscroll = function () {
