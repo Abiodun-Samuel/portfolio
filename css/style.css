@@ -7,7 +7,9 @@
    margin: 0;
    box-sizing: border-box;
 }
-
+html {
+   scroll-behavior: smooth;
+}
 h1,
 h2,
 h3,
@@ -16,6 +18,46 @@ body {
    font-family: sans-serif, 'Montserrat';
 }
 /*========== global styling ends here==========*/
+
+/* scroll progress bar style starts here */
+progress {
+   position: fixed;
+   top: 0;
+   left: 0;
+   appearance: none;
+   -webkit-appearance: none;
+   width: 100%;
+   height: 5px;
+   border: none;
+   background: transparent;
+   z-index: 100000000;
+}
+progress::-webkit-progress-bar {
+   background: transparent;
+}
+progress::-webkit-progress-value {
+   background: linear-gradient(
+      to left,
+      #ff4081,
+      #2196f3,
+      #ff4081,
+      #2196f3,
+      #ff4081
+   );
+   background-attachment: fixed;
+}
+progress::-moz-progress-bar {
+   background: linear-gradient(
+      to left,
+      #ff4081,
+      #2196f3,
+      #ff4081,
+      #2196f3,
+      #ff4081
+   );
+   background-attachment: fixed;
+}
+/* scroll progress bar style ends here */
 
 /*========== Header Section Style Begins Here==========*/
 /* #header {
@@ -167,6 +209,7 @@ body {
 #services .container .row .card-title {
    border-bottom: 3px solid #2196f3;
    padding-bottom: 5px;
+   text-align: center;
 }
 #services .container .row .card .card-body .service-btn {
    text-align: center;
@@ -244,30 +287,25 @@ body {
 /* ========== Contact Section Style Begins ========== */
 #contact {
    background: url('../image/contact-background.jpg');
-   /* background-size: cover; */
-   background-attachment: fixed;
-   color: #212121;
-   padding: 30px 0;
+   /* linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
+   background-blend-mode: overlay; */
    background-repeat: no-repeat;
    background-position: center;
-   background-size: 100% 100%;
-   height: auto;
+   background-size: cover;
+   color: #212121;
+   padding: 30px 0;
 }
-
 #contact .contact-header {
    text-align: center;
 }
-#contact .contact-header h3 {
-   font-size: 30px;
-   font-weight: 400;
-   text-align: center;
+#contact .contact-header h4 {
    display: inline-block;
-   padding: 10px 20px;
+   padding: 5px 15px;
    border: 2.5px solid #ff4081;
    border-radius: 5px;
-   box-shadow: 4px 4px 8px -1px rgba(0, 0, 0, 0.25);
+   box-shadow: 4px 4px 8px -1px rgba(0, 0, 0, 0.25),
+      -4px -4px 8px -1px rgba(255, 255, 255, 0.5);
 }
-
 #contact .container-fluid .row .contact .contact-icons {
    display: flex;
    justify-content: space-between;
