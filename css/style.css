@@ -573,8 +573,7 @@ progress::-moz-progress-bar {
    cursor: pointer;
 }
 .back-top:hover {
-   transform: scale(1.1);
-   color: #2196f3;
+   transform: scale(1.15);
 }
 
 /* ==========back to the top button style ends========== */
