@@ -1,20 +1,4 @@
-// ==========back to the top button==========
 
-$(document).ready(function () {
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > 100) {
-            $(".back-top").fadeIn(400);
-        }
-        else {
-            $(".back-top").fadeOut(400);
-        }
-    });
-    $(".back-top").click(function () {
-        $("html, body").animate({
-            scrollTop: 0
-        }, 0000);
-    });
-});
 
 // scroll progress bar
 
@@ -42,12 +26,10 @@ const navSlide = () => {
         navmenu.classList.toggle('nav-active');
         burger.classList.toggle('toggle');
         burgerborder.classList.toggle('burg');
-        navLinks.animate
 
     });
 }
 navSlide();
-
 
 // ========== Navbar scroll effects ==========
 
@@ -69,10 +51,27 @@ function myFunction() {
 
 var typed = new Typed('.type', {
     strings: ['Web Developer', 'UI-UX Designer', 'Digital Marketer'],
-    typeSpeed: 60,
-    backSpeed: 60,
+    typeSpeed: 50,
+    backSpeed: 50,
     loop: true,
 });
 
 // ==========typing effect ends here==========
 
+// ==========back to the top button==========
+
+$(document).ready(function () {
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 100) {
+            $(".back-top").fadeIn(400);
+        }
+        else {
+            $(".back-top").fadeOut(400);
+        }
+    });
+    $(".back-top").click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 0000);
+    });
+});
