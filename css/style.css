@@ -146,8 +146,8 @@ progress::-moz-progress-bar {
    color: #ff4081;
 }
 .intro .container .intro-box button {
-   padding: 10px 30px;
-   border-radius: 50px;
+   padding: 8px 20px;
+   border-radius: 5px;
    outline: none;
    border: 2px solid #ff4081;
    margin: 0px 15px 0 0;
@@ -176,13 +176,15 @@ progress::-moz-progress-bar {
    padding: 30px 0;
    background: #f5f5f5;
    color: #212121;
+   font-size: 14px;
 }
 #services .container .services-header {
    text-align: center;
 }
-#services .container .services-header h4 {
+#services .container .services-header h5 {
    display: inline-block;
    padding: 5px 15px;
+   font-weight: bold;
    border: 2.5px solid #ff4081;
    border-radius: 5px;
    box-shadow: 4px 4px 8px -1px rgba(0, 0, 0, 0.25),
@@ -195,6 +197,9 @@ progress::-moz-progress-bar {
    transition: all 0.3s ease-in-out;
    margin-top: 20px;
 }
+#services .container .row .card .card-body {
+   padding-top: 0px;
+}
 #services .container .card:hover {
    -webkit-transform: translateY(-5px);
    transform: translateY(-5px);
@@ -202,14 +207,18 @@ progress::-moz-progress-bar {
 }
 #services .container .row .card .icon {
    text-align: center;
-   font-size: 40px;
+}
+
+#services .container .row .card .icon img {
+   width: 45px;
+   height: 45px;
    transition: 0.5s;
-   color: #ff4081;
 }
 #services .container .row .card-title {
-   border-bottom: 3px solid #2196f3;
-   padding-bottom: 5px;
+   border-bottom: 2.5px solid #ff4081;
+   padding: 5px 0;
    text-align: center;
+   font-weight: bold;
 }
 #services .container .row .card .card-body .service-btn {
    text-align: center;
@@ -218,8 +227,8 @@ progress::-moz-progress-bar {
    background: #ff4081;
    border: none;
    outline: none;
-   border-radius: 50px;
-   padding: 6px 25px;
+   border-radius: 5px;
+   padding: 5px 15px;
    color: #f5f5f5;
    transition: 0.5s;
    box-shadow: 4px 4px 8px -1px rgba(0, 0, 0, 0.25),
@@ -232,10 +241,8 @@ progress::-moz-progress-bar {
    .card-body
    .service-btn
    input[type='submit']:hover {
-   transform: scale(0.9);
+   transform: scale(0.95);
    cursor: pointer;
-   box-shadow: inset 4px 4px 8px -1px rgba(0, 0, 0, 0.25),
-      inset -2px -2px 5px -1px rgba(255, 255, 255, 0.5);
 }
 /* ========== Service Section Style Ends here========== */
 /* ========== Patronise  Section Style Ends here========== */
@@ -243,14 +250,15 @@ progress::-moz-progress-bar {
    padding: 30px 0;
    background: #2196f3;
    color: #f8f9fa;
-   text-align: center;
+   font-size: 14px;
 }
 #Expectation .container .expectation-header {
    text-align: center;
 }
-#Expectation .container .expectation-header h4 {
+#Expectation .container .expectation-header h5 {
    display: inline-block;
-   padding: 5px 15px;
+   padding: 5px 10px;
+   font-weight: bold;
    border: 2.5px solid #ff4081;
    border-radius: 5px;
    box-shadow: 4px 4px 8px -1px rgba(0, 0, 0, 0.25),
@@ -260,28 +268,28 @@ progress::-moz-progress-bar {
    margin-top: 20px;
    background: #1976d2;
    border-color: #1976d2;
-   border-radius: 10px;
+   border-radius: 5px;
    padding: 5px 0;
    transition: 0.3s ease-in-out;
 }
-
 #Expectation .card:hover {
    background: #f8f9fa;
    border-color: #f8f9fa;
    color: #1976d2;
 }
-
-#Expectation .card h5 {
-   font-size: 20px;
-   font-weight: 600;
+#Expectation .card h6 {
+   font-weight: bold;
    border-bottom: 2.5px solid #ff4081;
    padding-bottom: 5px;
+   text-align: center;
 }
-
-#Expectation .card p {
-   font-size: 15px;
+#Expectation .card ul li {
+   list-style: none;
 }
-
+#Expectation .card .card-body .fa-check-square {
+   color: #ff4081;
+   margin-right: 5px;
+}
 /* ========== Patronise Section Style Ends here========== */
 
 /* ========== Contact Section Style Begins ========== */
@@ -294,13 +302,15 @@ progress::-moz-progress-bar {
    background-size: cover;
    color: #212121;
    padding: 30px 0;
+   font-size: 14px;
 }
 #contact .contact-header {
    text-align: center;
 }
-#contact .contact-header h4 {
+#contact .contact-header h5 {
    display: inline-block;
-   padding: 5px 15px;
+   padding: 5px 10px;
+   font-weight: bold;
    border: 2.5px solid #ff4081;
    border-radius: 5px;
    box-shadow: 4px 4px 8px -1px rgba(0, 0, 0, 0.25),
@@ -378,7 +388,7 @@ progress::-moz-progress-bar {
    background: #ff4081;
    border: none;
    outline: none;
-   border-radius: 20px;
+   border-radius: 5px;
    padding: 8px 30px;
    color: #f5f5f5;
    transition: 0.5s;
@@ -451,16 +461,17 @@ progress::-moz-progress-bar {
    padding: 5px 0px;
 }
 #footer .card .card-body .footer-logo {
-   width: 80px;
-   height: 80px;
+   width: 85px;
+   height: 85px;
 }
 #footer .card .card-body ul li {
    list-style: none;
    padding-top: 5px;
 }
-#footer .card .card-body ul li i {
+#footer .card .card-body ul li div {
    color: #2196f3;
    margin-right: 5px;
+   display: inline;
 }
 #footer .card .card-body .footer-letter input {
    padding: 5px 10px;
@@ -477,17 +488,14 @@ progress::-moz-progress-bar {
    color: #f5f5f5;
    border: none;
    outline: none;
-   font-size: 14px;
    padding: 5px 25px;
-   border-radius: 20px;
+   border-radius: 5px;
    cursor: pointer;
    box-shadow: 5px 5px 8px -1px rgba(0, 0, 0, 0.4),
       -5px -5px 8px -1px rgba(0, 0, 0, 0.4);
 }
 #footer .card .card-body .footer-letter button:hover {
-   box-shadow: inset 4px 4px 8px -1px rgba(0, 0, 0, 0.25),
-      inset -2px -2px 5px -1px rgba(255, 255, 255, 0.5);
-   transform: scale(0.9);
+   transform: scale(0.95);
    transition: all 0.5s;
 }
 #footer .quick-links {
@@ -496,7 +504,6 @@ progress::-moz-progress-bar {
 #footer .quick-links .container a {
    color: #bdbdbd;
    padding: 0px 10px;
-   /* font-size:12px; */
    border-right: 1.5px solid #2196f3;
    border-left: 1.5px solid #2196f3;
    text-decoration: none;
@@ -515,7 +522,7 @@ progress::-moz-progress-bar {
    height: 35px;
    width: 35px;
    margin: 15px;
-   border-radius: 6px;
+   border-radius: 5px;
    align-items: center;
    justify-content: center;
    text-decoration: none;
