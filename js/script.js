@@ -1,16 +1,3 @@
-
-
-// scroll progress bar
-
-gsap.registerPlugin(ScrollTrigger);
-gsap.to('progress', {
-    value: 100,
-    ease: 'none',
-    scrollTrigger: { scrub: 0.3 }
-});
-
-// scroll progress bar 
-
 // ========== Nav Toggle effects ==========
 
 const navSlide = () => {
@@ -72,6 +59,17 @@ $(document).ready(function () {
     $(".back-top").click(function () {
         $("html, body").animate({
             scrollTop: 0
-        }, 0000);
+        }, 500);
     });
 });
+
+// scroll progress bar
+
+gsap.registerPlugin(ScrollTrigger);
+gsap.to('progress', {
+    value: 100,
+    ease: 'none',
+    scrollTrigger: { scrub: 0.3 }
+});
+
+// scroll progress bar 
