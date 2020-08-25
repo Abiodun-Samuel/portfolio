@@ -4,7 +4,6 @@ const navSlide = () => {
 
     const burger = document.querySelector(".burger");
     const navmenu = document.querySelector(".navbar-nav");
-    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
     const burgerborder = document.querySelector(".burger");
 
     // toggle nav
