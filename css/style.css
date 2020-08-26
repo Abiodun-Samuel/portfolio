@@ -17,6 +17,20 @@ p,
 body {
    font-family: sans-serif, 'Montserrat';
 }
+.hover-border::after {
+   content: '';
+   width: 20%;
+   height: 5px;
+   top: 0%;
+   left: 40%;
+   background-color: #ff4081;
+   position: absolute;
+   transition: all 500ms ease;
+}
+.hover-border:hover::after {
+   left: 0%;
+   width: 100%;
+}
 /*========== global styling ends here==========*/
 
 /* scroll progress bar style starts here */
@@ -79,13 +93,15 @@ progress::-moz-progress-bar {
 .navbar .navbar-nav .nav-link {
    color: #212121;
    padding: 10px 20px;
+   font-size: 14px;
 }
 .navbar .navbar-nav .nav-link.active {
    color: #2196f3;
 }
 .navbar .navbar-nav .nav-link:hover {
    color: #1976d2;
-   transition: all 0.5s ease-in;
+   transition: all 0.5s ease;
+   border-bottom: 3px solid #ff4081;
 }
 
 .navbar .container .nav-contact {
@@ -133,7 +149,6 @@ progress::-moz-progress-bar {
    padding: 15px 15px;
    border-radius: 5px;
    line-height: 1.5;
-   /* letter-spacing: 2px; */
    margin-bottom: 15px;
    font-weight: bolder;
    text-align: center;
@@ -201,14 +216,12 @@ progress::-moz-progress-bar {
    padding-top: 0px;
 }
 #services .container .card:hover {
-   -webkit-transform: translateY(-5px);
-   transform: translateY(-5px);
-   transition: 0.5s;
+   background-color: #fffcfc;
+   color: #2196f3;
 }
 #services .container .row .card .icon {
    text-align: center;
 }
-
 #services .container .row .card .icon img {
    width: 45px;
    height: 45px;
@@ -646,27 +659,30 @@ progress::-moz-progress-bar {
       list-style: none;
    }
    .navbar .container .nav-contact a {
-      padding: 0px 5px;
+      padding-right: 5px;
       color: #757575;
-      font-size: 14px;
+      font-size: 20px;
    }
-   .navbar .container .nav-contact a:hover .fa-facebook {
+   .navbar .container .nav-contact a .fa-facebook {
       color: #4267b2;
    }
-   .navbar .container .nav-contact a:hover .fa-whatsapp {
+   .navbar .container .nav-contact a .fa-whatsapp {
       color: #4ac959;
    }
-   .navbar .container .nav-contact a:hover .fa-twitter {
+   .navbar .container .nav-contact a .fa-twitter {
       color: #00acee;
    }
-   .navbar .container .nav-contact a:hover .fa-instagram {
+   .navbar .container .nav-contact a .fa-instagram {
       color: #e1306c;
    }
-   .navbar .container .nav-contact a:hover .fa-linkedin {
+   .navbar .container .nav-contact a .fa-linkedin {
       color: #2867b2;
    }
-   .navbar .container .nav-contact a:hover .fa-github {
+   .navbar .container .nav-contact a .fa-github {
       color: #333;
+   }
+   .navbar .container .nav-contact a .fa-telegram-plane {
+      color: #0088cc;
    }
    .sticky {
       width: 100%;
@@ -680,6 +696,10 @@ progress::-moz-progress-bar {
       transition: all 0.5s;
    }
    /* ==========Media Queries for Nav Ends here section==========  */
+
+   .intro .container .intro-but {
+      text-align: center;
+   }
 
    /* ==========  Media Query footer Section  ========== */
    #footer {
