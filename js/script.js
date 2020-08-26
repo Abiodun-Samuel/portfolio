@@ -1,3 +1,4 @@
+
 // ========== Nav Toggle effects ==========
 
 const navSlide = () => {
@@ -46,6 +47,7 @@ var typed = new Typed('.type', {
 
 // ==========back to the top button==========
 
+
 $(document).ready(function () {
     $(window).scroll(function () {
         if ($(window).scrollTop() > 100) {
@@ -61,6 +63,15 @@ $(document).ready(function () {
         }, 500);
     });
 });
+
+// matchheight
+
+$(document).ready(function () {
+    $('.card').matchHeight();
+});
+
+
+
 
 // scroll progress bar
 
