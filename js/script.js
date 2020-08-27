@@ -1,4 +1,6 @@
 
+
+
 // ========== Nav Toggle effects ==========
 
 const navSlide = () => {
@@ -6,6 +8,7 @@ const navSlide = () => {
     const burger = document.querySelector(".burger");
     const navmenu = document.querySelector(".navbar-nav");
     const burgerborder = document.querySelector(".burger");
+    const scroll = document.querySelector("body");
 
     // toggle nav
     burger.addEventListener("click", () => {
@@ -13,6 +16,7 @@ const navSlide = () => {
         navmenu.classList.toggle('nav-active');
         burger.classList.toggle('toggle');
         burgerborder.classList.toggle('burg');
+        scroll.classList.toggle('no-scroll');
 
     });
 }
@@ -43,32 +47,11 @@ var typed = new Typed('.type', {
     loop: true,
 });
 
+
+
 // ==========typing effect ends here==========
 
 // ==========back to the top button==========
-
-
-$(document).ready(function () {
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > 100) {
-            $(".back-top").fadeIn(400);
-        }
-        else {
-            $(".back-top").fadeOut(400);
-        }
-    });
-    $(".back-top").click(function () {
-        $("html, body").animate({
-            scrollTop: 0
-        }, 500);
-    });
-});
-
-// matchheight
-
-$(document).ready(function () {
-    $('.card').matchHeight();
-});
 
 
 
