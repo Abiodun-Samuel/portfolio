@@ -186,6 +186,90 @@ progress::-moz-progress-bar {
 }
 /* ========== Intro Section Style Ends========== */
 
+/* ==========  About Me Section Style Begins========== */
+#aboutme {
+   background-color: #ffffff;
+   font-size: 14px;
+   padding: 30px 0px;
+   color: #212121;
+}
+#aboutme .container .section-header {
+   text-align: center;
+}
+#aboutme .container .section-header h5 {
+   display: inline-block;
+   font-weight: bold;
+   border: 2.5px solid #ff4081;
+   padding: 5px 15px;
+   border-radius: 5px;
+   box-shadow: 4px 4px 8px -1px rgba(0, 0, 0, 0.25),
+      -4px -4px 8px -1px rgba(255, 255, 255);
+}
+#aboutme .container .row .about {
+   margin: 30px 0px 15px 0;
+}
+#aboutme .profile-image {
+   position: relative;
+}
+#aboutme .profile-image::before {
+   content: '';
+   border: 5px solid #ff4081;
+   border-radius: 5px;
+   position: absolute;
+   left: 15px;
+   top: 15px;
+   width: 250px;
+   height: 100%;
+}
+#aboutme .profile-image img {
+   width: 250px;
+   border-radius: 5px;
+}
+#aboutme .container .row .card {
+   border: none;
+   box-shadow: 0 10px 25px 0 rgba(68, 88, 144, 0.1),
+      0 -10px 25px 0 rgba(68, 88, 144, 0.1);
+}
+#aboutme .container .row .card h6 {
+   font-weight: bold;
+}
+#aboutme .container .row .card ul li {
+   list-style: none;
+}
+#aboutme .container .row .card ul li div {
+   display: inline-block;
+   border-radius: 50%;
+   border: 2px solid #ff4081;
+   width: 30px;
+   height: 30px;
+   text-align: center;
+}
+#aboutme .container .row .card button {
+   padding: 5px 15px;
+   border-radius: 5px;
+   color: #f5f5f5;
+   background-color: #ff4081;
+   outline: none;
+   border: 2px solid #ff4081;
+   margin: 10px 0;
+   box-shadow: 4px 4px 8px -1px rgba(0, 0, 0, 0.25),
+      -2px -2px 5px -1px rgba(255, 255, 255, 0.5);
+}
+#aboutme .container .row .card button:hover {
+   transition: all 0.5s;
+   transform: scale(0.95);
+   box-shadow: inset 4px 4px 8px -1px rgba(0, 0, 0, 0.25),
+      inset -2px -2px 5px -1px rgba(255, 255, 255, 0.5);
+}
+#aboutme .container .row .about-img img {
+   max-width: 100%;
+}
+#aboutme .container .row .about-text {
+   padding: 40px 0px;
+   line-height: 3;
+}
+/* ========== About Me Section Style Ends========== */
+
 /* ========== Service Section Style Begins here========== */
 #services {
    padding: 30px 0;
@@ -625,7 +709,10 @@ progress::-moz-progress-bar {
       background-color: #f5f5f5;
       font-size: 14px;
       padding-top: 15px;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
    }
+
    .navbar .container .navbar-nav .nav-link:hover {
       color: #1976d2;
       transition: 0.5s;
@@ -646,6 +733,10 @@ progress::-moz-progress-bar {
    .toggle .line3 {
       transform: rotate(45deg) translate(-5px, -6px);
       background-color: #ff4081;
+   }
+   .no-scroll {
+      overflow: hidden;
+      transition: all 0.5s;
    }
    .burg {
       border: 2px solid #ff4081;
@@ -691,7 +782,7 @@ progress::-moz-progress-bar {
       padding: 0px 15px;
    }
    .sticky .navbar-nav {
-      height: 500px;
+      height: 100vh;
       top: 55px;
       transition: all 0.5s;
    }
