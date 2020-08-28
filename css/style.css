@@ -17,7 +17,7 @@ p,
 body {
    font-family: sans-serif, 'Montserrat';
 }
-.hover-border::after {
+.hover-border-red::after {
    content: '';
    width: 20%;
    height: 5px;
@@ -27,9 +27,62 @@ body {
    position: absolute;
    transition: all 500ms ease;
 }
-.hover-border:hover::after {
+.hover-border-red:hover::after {
    left: 0%;
    width: 100%;
+}
+.hover-border-blue::after {
+   content: '';
+   width: 20%;
+   height: 5px;
+   top: 0%;
+   left: 40%;
+   background-color: #2196f3;
+   position: absolute;
+   transition: all 500ms ease;
+}
+.hover-border-blue:hover::after {
+   left: 0%;
+   width: 100%;
+}
+section {
+   padding: 80px 0px;
+}
+section .section-header {
+   text-align: center;
+}
+section .header-red {
+   background-color: #ff4081;
+   color: #f8f9fa;
+   display: inline-block;
+   padding: 5px 20px;
+   font-weight: bold;
+   border-radius: 5px;
+   box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.15),
+      -3px -3px 5px -1px rgba(255, 255, 255, 0.3);
+}
+section .header-blue {
+   background-color: #2196f3;
+   color: #f8f9fa;
+   display: inline-block;
+   padding: 5px 20px;
+   font-weight: bold;
+   border-radius: 5px;
+   box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.15),
+      -3px -3px 5px -1px rgba(255, 255, 255, 0.3);
+}
+
+#services,
+#patronize,
+#testimonials {
+   background: url('../image/bg-top-blue.svg') no-repeat top center,
+      url('../image/bg-bottom-blue.svg') no-repeat bottom center, #ffffff;
+}
+#aboutme,
+#portfolio,
+#contact {
+   background: url('../image/bg-top-red.svg') no-repeat top center,
+      url('../image/bg-bottom-red.svg') no-repeat bottom center, #ffffff;
 }
 /*========== global styling ends here==========*/
 
@@ -134,11 +187,9 @@ progress::-moz-progress-bar {
 .intro {
    padding-top: 150px;
    padding-bottom: 50px;
-   background-image: url('https://myimage.imfast.io/background-intro.jpg');
-
-   /* ,
-   /* background-image: url('../image/background-intro.jpg'),
-      linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)); */
+   /* background-image: url('https://myimage.imfast.io/background-intro.jpg'), linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)); */
+   background-image: url('../image/background-intro.jpg'),
+      linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
    background-blend-mode: overlay;
    background-repeat: no-repeat;
    background-position: center;
@@ -190,34 +241,6 @@ progress::-moz-progress-bar {
 /* ========== Intro Section Style Ends========== */
 
 /* ==========  About Me Section Style Begins========== */
-
-#aboutme {
-   background: url('../wave\ \(7\).svg') no-repeat top center;
-   font-size: 14px;
-   padding: 60px 0px;
-   color: #212121;
-}
-#aboutme .container .section-header {
-   text-align: center;
-   margin-top: 20px;
-}
-#aboutme .container .section-header h6 {
-   color: #f8f9fa;
-   display: inline-block;
-   padding: 5px 15px;
-   font-weight: bold;
-   letter-spacing: 2px;
-   border-radius: 5px;
-   background: #ff4081;
-   box-shadow: 5px 5px 10px #f2f2f2, -5px -5px 10px #ffffff;
-}
-/*  
-}
-
-
-
-
-
 
 #aboutme .container .row .about {
    margin: 30px 0px 15px 0;
@@ -281,148 +304,46 @@ progress::-moz-progress-bar {
 #aboutme .container .row .about-text {
    padding: 40px 0px;
    line-height: 3;
-} */
+}
+
 /* ========== About Me Section Style Ends========== */
 
 /* ========== Service Section Style Begins here========== */
-#services {
-   padding: 30px 0;
-   background: #f5f5f5;
-   color: #212121;
-   font-size: 14px;
-}
-#services .container .services-header {
-   text-align: center;
-}
-#services .container .services-header h5 {
-   display: inline-block;
-   padding: 5px 15px;
-   font-weight: bold;
-   border: 2.5px solid #ff4081;
-   border-radius: 5px;
-   box-shadow: 4px 4px 8px -1px rgba(0, 0, 0, 0.25),
-      -4px -4px 8px -1px rgba(255, 255, 255);
-}
-#services .container .card {
-   padding-top: 10px;
-   background: #f8f9fa;
-   box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
-   transition: all 0.3s ease-in-out;
-   margin-top: 20px;
-}
-#services .container .row .card .card-body {
-   padding-top: 0px;
-}
-#services .container .card:hover {
-   background-color: #fffcfc;
-   color: #2196f3;
-}
-#services .container .row .card .icon {
-   text-align: center;
-}
-#services .container .row .card .icon img {
-   width: 45px;
-   height: 45px;
-   transition: 0.5s;
-}
-#services .container .row .card-title {
-   border-bottom: 2.5px solid #ff4081;
-   padding: 5px 0;
-   text-align: center;
-   font-weight: bold;
-}
-#services .container .row .card .card-body .service-btn {
-   text-align: center;
-}
-#services .container .row .card .card-body .service-btn input[type='submit'] {
-   background: #ff4081;
-   border: none;
-   outline: none;
-   border-radius: 5px;
-   padding: 5px 15px;
-   color: #f5f5f5;
-   transition: 0.5s;
-   box-shadow: 4px 4px 8px -1px rgba(0, 0, 0, 0.25),
-      -4px -4px 8px -1px rgba(255, 255, 255);
-}
-#services
-   .container
-   .row
-   .card
-   .card-body
-   .service-btn
-   input[type='submit']:hover {
-   transform: scale(0.95);
-   cursor: pointer;
-}
+
 /* ========== Service Section Style Ends here========== */
+
+/* ========== Portfolio Section Style Begins here========== */
+
+/* ========== Portfolio Section Style Ends here========== */
+
 /* ========== Patronise  Section Style Ends here========== */
-#Expectation {
-   padding: 30px 0;
-   background: #2196f3;
-   color: #f8f9fa;
-   font-size: 14px;
-}
-#Expectation .container .expectation-header {
-   text-align: center;
-}
-#Expectation .container .expectation-header h5 {
-   display: inline-block;
-   padding: 5px 10px;
-   font-weight: bold;
-   border: 2.5px solid #ff4081;
-   border-radius: 5px;
-   box-shadow: 4px 4px 8px -1px rgba(0, 0, 0, 0.25),
-      -4px -4px 8px -1px rgba(255, 255, 255, 0.2);
-}
-#Expectation .container .card {
+
+#patronize .card {
    margin-top: 20px;
-   background: #1976d2;
-   border-color: #1976d2;
+   background: #2196f3;
    border-radius: 5px;
    padding: 5px 0;
+   color: #f8f9fa;
    transition: 0.3s ease-in-out;
 }
-#Expectation .card:hover {
-   background: #f8f9fa;
-   border-color: #f8f9fa;
-   color: #1976d2;
-}
-#Expectation .card h6 {
+
+#patronize .card h6 {
    font-weight: bold;
    border-bottom: 2.5px solid #ff4081;
    padding-bottom: 5px;
    text-align: center;
 }
-#Expectation .card ul li {
+#patronize .card ul li {
    list-style: none;
 }
-#Expectation .card .card-body .fa-check-double {
+#patronize .card .card-body .fa-check-double {
    color: #ff4081;
    margin-right: 7px;
 }
 /* ========== Patronise Section Style Ends here========== */
 
 /* ========== Contact Section Style Begins ========== */
-#contact {
-   background: url('../image/wave-bottom.svg') no-repeat bottom center,
-      url('../image/wave-top.svg') no-repeat top center;
-   color: #212121;
-   padding: 30px 0 40px 0;
-   font-size: 14px;
-}
-#contact .contact-header {
-   text-align: center;
-}
-#contact .contact-header h5 {
-   display: inline-block;
-   padding: 5px 10px;
-   font-weight: bold;
-   border: 2.5px solid #ff4081;
-   border-radius: 5px;
-   box-shadow: 4px 4px 8px -1px rgba(0, 0, 0, 0.3),
-      -4px -4px 8px -1px rgba(255, 255, 255, 0.1);
-}
+
 #contact .container .card {
    margin-top: 15px;
    background: #ffffff;
@@ -556,6 +477,10 @@ progress::-moz-progress-bar {
 }
 /* ========== contact form validation ========== */
 /* ========== Contact Section Style Ends ========== */
+
+/* ========== Testimonial Section Style Begins ========== */
+
+/* ========== Testimonial Section Style Ends ========== */
 
 /* ==========footer section style begins========== */
 #footer {
@@ -705,6 +630,10 @@ progress::-moz-progress-bar {
 /* ==========Media Queries for Nav==========  */
 
 @media only screen and (max-width: 768px) {
+   section {
+      padding: 35px 0px;
+   }
+
    .navbar .navbar-brand .profile-logo {
       width: 40px;
       height: 40px;
