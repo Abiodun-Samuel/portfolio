@@ -134,8 +134,11 @@ progress::-moz-progress-bar {
 .intro {
    padding-top: 150px;
    padding-bottom: 50px;
-   background-image: url('../image/background-intro.jpg'),
-      linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
+   background-image: url('https://myimage.imfast.io/background-intro.jpg');
+
+   /* ,
+   /* background-image: url('../image/background-intro.jpg'),
+      linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)); */
    background-blend-mode: overlay;
    background-repeat: no-repeat;
    background-position: center;
@@ -187,24 +190,35 @@ progress::-moz-progress-bar {
 /* ========== Intro Section Style Ends========== */
 
 /* ==========  About Me Section Style Begins========== */
+
 #aboutme {
-   background-color: #ffffff;
+   background: url('../wave\ \(7\).svg') no-repeat top center;
    font-size: 14px;
-   padding: 30px 0px;
+   padding: 60px 0px;
    color: #212121;
 }
 #aboutme .container .section-header {
    text-align: center;
+   margin-top: 20px;
 }
-#aboutme .container .section-header h5 {
+#aboutme .container .section-header h6 {
+   color: #f8f9fa;
    display: inline-block;
-   font-weight: bold;
-   border: 2.5px solid #ff4081;
    padding: 5px 15px;
+   font-weight: bold;
+   letter-spacing: 2px;
    border-radius: 5px;
-   box-shadow: 4px 4px 8px -1px rgba(0, 0, 0, 0.25),
-      -4px -4px 8px -1px rgba(255, 255, 255);
+   background: #ff4081;
+   box-shadow: 5px 5px 10px #f2f2f2, -5px -5px 10px #ffffff;
 }
+/*  
+}
+
+
+
+
+
+
 #aboutme .container .row .about {
    margin: 30px 0px 15px 0;
 }
@@ -267,7 +281,7 @@ progress::-moz-progress-bar {
 #aboutme .container .row .about-text {
    padding: 40px 0px;
    line-height: 3;
-}
+} */
 /* ========== About Me Section Style Ends========== */
 
 /* ========== Service Section Style Begins here========== */
