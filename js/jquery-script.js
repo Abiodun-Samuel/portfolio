@@ -14,14 +14,37 @@ $(document).ready(function () {
     });
 });
 
+jQuery(document).ready(function ($) {
+    "use strict";
+    //  TESTIMONIALS CAROUSEL 
+    $('#client-testimonials').owlCarousel({
+        loop: true,
+        center: true,
+        items: 3,
+        margin: 0,
+        autoplay: true,
+        dots: true,
+        autoplayTimeout: 3000,
+        smartSpeed: 450,
+        responsive: {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },
+            1170: {
+                items: 3
+            }
+        }
+    });
+});
+
 // matchheight
 
 $(document).ready(function () {
     $('.card').matchHeight();
 });
 
-// $('.burger').click(function () {
-//     $("body").css("overflow", "hidden");
-//     $("body").css("overflow", "auto");
+// scroll progress bar
 
-// });
