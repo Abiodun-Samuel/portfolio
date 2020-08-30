@@ -480,6 +480,67 @@ progress::-moz-progress-bar {
 
 /* ========== Testimonial Section Style Begins ========== */
 
+#client-testimonials .card {
+   text-align: center;
+   margin: 40px 0px;
+   opacity: 0.4;
+   color: #212121;
+   background: #f8f9fa;
+   border: 1px solid #ececec;
+   box-shadow: 0 9px 18px rgba(0, 0, 0, 0.1), 0 5px 7px rgba(0, 0, 0, 0.05);
+   transform: scale(0.85);
+   transition: transform 500m ease;
+}
+#client-testimonials .card .card-body img {
+   display: inline-block;
+   border: 2px solid #2196f3;
+   border-radius: 50%;
+   width: 100px;
+}
+#client-testimonials .card .card-body .fa-quote-left,
+#client-testimonials .card .card-body .fa-quote-right {
+   color: #2196f3;
+   font-size: 20px;
+}
+
+#client-testimonials .card .client-order {
+   background: #2196f3;
+   font-size: 15px;
+   border-radius: 5px;
+   color: #fff;
+}
+#client-testimonials .card .client-name {
+   color: #2196f3;
+   font-weight: bold;
+}
+#client-testimonials .owl-item.active.center .card {
+   opacity: 1;
+   transform: scale(1);
+}
+#client-testimonials.owl-carousel .owl-dots .owl-dot.active span,
+#client-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
+   background: #2196f3;
+   transform: scale(0.7);
+}
+#client-testimonials.owl-carousel .owl-dots {
+   display: inline-block;
+   width: 100%;
+   text-align: center;
+}
+#client-testimonials.owl-carousel .owl-dots .owl-dot {
+   display: inline-block;
+   outline: none;
+}
+#client-testimonials.owl-carousel .owl-dots .owl-dot span {
+   background: #2196f3;
+   display: inline-block;
+   height: 20px;
+   margin: 0 2px 5px;
+   transform: scale(0.3);
+   transition: transform 300ms ease-out 0s;
+   width: 20px;
+}
+
 /* ========== Testimonial Section Style Ends ========== */
 
 /* ==========footer section style begins========== */
@@ -571,7 +632,7 @@ progress::-moz-progress-bar {
    transition: 0.5s;
    font-size: 23px;
    color: #757575;
-   background-color: rgba(0, 0, 0, 0.4);
+   background: inherit;
 }
 #footer .footer-social .container a:hover {
    box-shadow: inset -4px -4px 8px -1px rgba(0, 0, 0, 0.25),
