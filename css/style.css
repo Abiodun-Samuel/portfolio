@@ -7,14 +7,15 @@
    margin: 0;
    box-sizing: border-box;
 }
-html {
+html,
+body {
    scroll-behavior: smooth;
+   background-color: #ffffff;
 }
 h1,
 h2,
 h3,
-p,
-body {
+p {
    font-family: sans-serif, 'Montserrat';
 }
 .hover-border-red::after {
@@ -195,6 +196,8 @@ progress::-moz-progress-bar {
    background-position: center;
    background-size: cover;
    height: auto;
+   border: 1px solid #ececec;
+   box-shadow: 0 9px 18px rgba(0, 0, 0, 0.1), 0 5px 7px rgba(0, 0, 0, 0.05);
 }
 .intro .container .intro-box h5,
 .intro .container .intro-box h6 {
@@ -238,6 +241,22 @@ progress::-moz-progress-bar {
    text-decoration: none;
    color: #212121;
 }
+
+/* ========= intro carousel ========== */
+#intro-carousel .card {
+   text-align: center;
+   margin: 15px;
+   color: #ff4081;
+   background: #ffffff;
+   border: 1px solid #ececec;
+   box-shadow: 0 9px 18px rgba(0, 0, 0, 0.1), 0 5px 7px rgba(0, 0, 0, 0.05);
+}
+#intro-carousel .card img {
+   display: inline-block;
+   max-width: 60%;
+}
+/* ========= intro carousel ========== */
+
 /* ========== Intro Section Style Ends========== */
 
 /* ==========  About Me Section Style Begins========== */
@@ -310,9 +329,209 @@ progress::-moz-progress-bar {
 
 /* ========== Service Section Style Begins here========== */
 
+#services .container .card {
+   padding-top: 10px;
+   background: #ffffff;
+   border-radius: 5px;
+   border: 1px solid #ececec;
+   box-shadow: 0 9px 18px rgba(0, 0, 0, 0.1), 0 5px 7px rgba(0, 0, 0, 0.05);
+   transition: 0.3s ease-in-out;
+   margin-top: 20px;
+}
+#services .container .row .card .card-body {
+   padding-top: 10px;
+}
+#services .container .card:hover {
+   background-color: #fffcfc;
+   color: #2196f3;
+}
+#services .container .row .card .icon {
+   text-align: center;
+}
+#services .container .row .card .icon img {
+   width: 45px;
+   height: 45px;
+   transition: 0.5s;
+}
+#services .container .row .card-title {
+   border-bottom: 2.5px solid #2196f3;
+   padding: 5px 0;
+   text-align: center;
+   font-weight: bold;
+}
+#services .container .row .card .card-body .service-btn {
+   text-align: center;
+}
+#services .container .row .card .card-body .service-btn input[type='submit'] {
+   background: #2196f3;
+   border: none;
+   outline: none;
+   border-radius: 5px;
+   padding: 5px 15px;
+   color: #f5f5f5;
+   transition: 0.5s;
+   box-shadow: 4px 4px 8px -1px rgba(0, 0, 0, 0.25),
+      -4px -4px 8px -1px rgba(255, 255, 255);
+}
+#services
+   .container
+   .row
+   .card
+   .card-body
+   .service-btn
+   input[type='submit']:hover {
+   transform: scale(0.95);
+   cursor: pointer;
+}
+
 /* ========== Service Section Style Ends here========== */
 
 /* ========== Portfolio Section Style Begins here========== */
+
+#portfolio {
+  padding: 60px 0;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+}
+
+#portfolio #portfolio-flters {
+  padding: 0;
+  margin: 5px 0 35px 0;
+  list-style: none;
+  text-align: center;
+}
+
+#portfolio #portfolio-flters li {
+  cursor: pointer;
+  margin: 15px 15px 15px 0;
+  display: inline-block;
+  padding: 6px 20px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #007bff;
+  border-radius: 50px;
+  text-transform: uppercase;
+  background: #ecf5ff;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+#portfolio #portfolio-flters li:hover,
+#portfolio #portfolio-flters li.filter-active {
+  background: #007bff;
+  color: #fff;
+}
+
+#portfolio #portfolio-flters li:last-child {
+  margin-right: 0;
+}
+
+#portfolio .portfolio-item {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+#portfolio .portfolio-item .portfolio-wrap {
+  overflow: hidden;
+  position: relative;
+  border-radius: 6px;
+  margin: 0;
+}
+
+#portfolio .portfolio-item .portfolio-wrap:hover img {
+  opacity: 0.4;
+  transition: 0.3s;
+}
+
+#portfolio .portfolio-item .portfolio-wrap .portfolio-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  opacity: 0;
+  transition: 0.2s linear;
+}
+
+#portfolio .portfolio-item .portfolio-wrap .portfolio-info h4 {
+  font-size: 22px;
+  line-height: 1px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  padding-bottom: 0;
+}
+
+#portfolio .portfolio-item .portfolio-wrap .portfolio-info h4 a {
+  color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-wrap .portfolio-info h4 a:hover {
+  color: #007bff;
+}
+
+#portfolio .portfolio-item .portfolio-wrap .portfolio-info p {
+  padding: 0;
+  margin: 0;
+  color: #e2effe;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+#portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-preview,
+#portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-details {
+  display: inline-block;
+  line-height: 1;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  background: #007bff;
+  border-radius: 50%;
+  margin: 10px 4px 0 4px;
+}
+
+#portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-preview i,
+#portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-details i {
+  padding-top: 6px;
+  font-size: 22px;
+  color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-preview:hover,
+#portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-details:hover {
+  background: #3395ff;
+}
+
+#portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-preview:hover i,
+#portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-details:hover i {
+  color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-wrap:hover {
+  background: #003166;
+}
+
+#portfolio .portfolio-item .portfolio-wrap:hover .portfolio-info {
+  opacity: 1;
+}
 
 /* ========== Portfolio Section Style Ends here========== */
 
@@ -325,6 +544,10 @@ progress::-moz-progress-bar {
    padding: 5px 0;
    color: #f8f9fa;
    transition: 0.3s ease-in-out;
+}
+#patronize .card:hover {
+   color: #2196f3;
+   background: #f8f9fa;
 }
 
 #patronize .card h6 {
@@ -347,6 +570,9 @@ progress::-moz-progress-bar {
 #contact .container .card {
    margin-top: 15px;
    background: #ffffff;
+   border: 1px solid #ececec;
+   box-shadow: 0 9px 18px rgba(0, 0, 0, 0.1), 0 5px 7px rgba(0, 0, 0, 0.05);
+   border-radius: 5px;
 }
 #contact .card .card-body ul li {
    list-style: none;
@@ -485,7 +711,7 @@ progress::-moz-progress-bar {
    margin: 40px 0px;
    opacity: 0.4;
    color: #212121;
-   background: #f8f9fa;
+   background: #ffffff;
    border: 1px solid #ececec;
    box-shadow: 0 9px 18px rgba(0, 0, 0, 0.1), 0 5px 7px rgba(0, 0, 0, 0.05);
    transform: scale(0.85);
@@ -558,7 +784,7 @@ progress::-moz-progress-bar {
    box-shadow: 5px 5px 12px #202020, -5px -5px 12px #222222;
 }
 #footer .card .card-body h6 {
-   border-bottom: 3px solid #2196f3;
+   border-bottom: 2.5px solid #ff4081;
    padding: 5px 0px;
 }
 #footer .card .card-body .footer-logo {
@@ -570,7 +796,7 @@ progress::-moz-progress-bar {
    padding-top: 5px;
 }
 #footer .card .card-body ul li div {
-   color: #2196f3;
+   color: #ff4081;
    margin-right: 5px;
    display: inline;
 }
@@ -594,10 +820,10 @@ progress::-moz-progress-bar {
    cursor: pointer;
    box-shadow: 5px 5px 8px -1px rgba(0, 0, 0, 0.4),
       -5px -5px 8px -1px rgba(0, 0, 0, 0.4);
+   transition: 0.5s ease-in-out;
 }
 #footer .card .card-body .footer-letter button:hover {
    transform: scale(0.95);
-   transition: all 0.5s;
 }
 #footer .quick-links {
    text-align: center;
@@ -605,8 +831,8 @@ progress::-moz-progress-bar {
 #footer .quick-links .container a {
    color: #bdbdbd;
    padding: 0px 10px;
-   border-right: 1.5px solid #2196f3;
-   border-left: 1.5px solid #2196f3;
+   border-right: 1.5px solid #ff4081;
+   border-left: 1.5px solid #ff4081;
    text-decoration: none;
 }
 #footer .quick-links .container a:hover {
@@ -655,7 +881,7 @@ progress::-moz-progress-bar {
    color: #333;
 }
 #footer .footer-foot {
-   border-top: 3.5px solid #2196f3;
+   border-top: 3.5px solid #ff4081;
    color: #757575;
    text-align: center;
    padding: 10px;
