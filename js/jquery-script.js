@@ -42,7 +42,7 @@ $(document).ready(function () {
     $('#intro-carousel').owlCarousel({
         loop: true,
         center: false,
-        items: 5,
+        items: 8,
         margin: 0,
         autoplay: true,
         dots: false,
@@ -50,32 +50,36 @@ $(document).ready(function () {
         smartSpeed: 450,
         responsive: {
             0: {
-                items: 2
-            },
-            768: {
                 items: 4
             },
+            768: {
+                items: 6
+            },
             1170: {
-                items: 5
+                items: 8
             }
         }
     });
 
-
     // matchheight
     $('.card').matchHeight();
 
-    $(window).on('load', function () {
-        var portfolioIsotope = $('.portfolio-container').isotope({
-            itemSelector: '.portfolio-item'
-        });
-        $('#portfolio-flters li').on('click', function () {
-            $("#portfolio-flters li").removeClass('filter-active');
-            $(this).addClass('filter-active');
+    // porfolio filter
 
-            portfolioIsotope.isotope({ filter: $(this).data('filter') });
+    $('.list').click(function () {
+        const value = $(this).attr('data-filter');
+        if (value == 'all') {
+            $('.itemBox').show('1000');
+        }
+        else {
+            $('.itemBox').not('.' + value).hide('1000');
+            $('.itemBox').filter('.' + value).show('1000');
+        }
+        $('.list').click(function () {
+            $(this).addClass('active').siblings().removeClass('active');
         });
     });
+
 });
 
 
