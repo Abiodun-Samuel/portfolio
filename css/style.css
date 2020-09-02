@@ -127,11 +127,6 @@ progress::-moz-progress-bar {
 }
 /* scroll progress bar style ends here */
 
-/*========== Header Section Style Begins Here==========*/
-/* #header {
-} */
-/*========== Header Section Style Ends Here==========*/
-
 /*========== Nav Section Style Begins Here==========*/
 .navbar {
    width: 100%;
@@ -147,7 +142,6 @@ progress::-moz-progress-bar {
 .navbar .navbar-nav .nav-link {
    color: #212121;
    padding: 10px 20px;
-   font-size: 14px;
 }
 .navbar .navbar-nav .nav-link.active {
    color: #2196f3;
@@ -197,27 +191,28 @@ progress::-moz-progress-bar {
    background-size: cover;
    height: auto;
    border: 1px solid #ececec;
-   box-shadow: 0 9px 18px rgba(0, 0, 0, 0.1), 0 5px 7px rgba(0, 0, 0, 0.05);
+   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.05);
 }
-.intro .container .intro-box h5,
+.intro .container .intro-box h4,
 .intro .container .intro-box h6 {
    background-color: rgba(245, 245, 245, 0.9);
    color: #212121;
-   padding: 15px 15px;
+   padding: 10px 10px;
    border-radius: 5px;
-   line-height: 1.5;
+   line-height: 1.3;
    margin-bottom: 15px;
-   font-weight: bolder;
+   font-weight: bold;
    text-align: center;
 }
 .intro .container .intro-box .typed-cursor {
    color: #ff4081;
 }
 
-.intro .container .intro-box h6 .type {
+.intro .container .intro-box .type {
    color: #ff4081;
 }
 .intro .container .intro-box button {
+   font-weight: bold;
    padding: 8px 20px;
    border-radius: 5px;
    outline: none;
@@ -235,35 +230,17 @@ progress::-moz-progress-bar {
 
 .intro .container .intro-box .info {
    background: #ff4081;
-   color: #f5f5f5;
+   color: #f8f9fa;
 }
 .intro .container .intro-box .resume a {
    text-decoration: none;
    color: #212121;
 }
 
-/* ========= intro carousel ========== */
-#intro-carousel .card {
-   text-align: center;
-   margin: 15px;
-   color: #ff4081;
-   background: #ffffff;
-   border: 1px solid #ececec;
-   box-shadow: 0 9px 18px rgba(0, 0, 0, 0.1), 0 5px 7px rgba(0, 0, 0, 0.05);
-}
-#intro-carousel .card img {
-   display: inline-block;
-   max-width: 60%;
-}
-/* ========= intro carousel ========== */
-
 /* ========== Intro Section Style Ends========== */
 
 /* ==========  About Me Section Style Begins========== */
 
-#aboutme .container .row .about {
-   margin: 30px 0px 15px 0;
-}
 #aboutme .profile-image {
    position: relative;
 }
@@ -275,54 +252,32 @@ progress::-moz-progress-bar {
    left: 15px;
    top: 15px;
    width: 250px;
-   height: 100%;
+   height: 350px;
 }
 #aboutme .profile-image img {
+   border-radius: 5px;
    width: 250px;
-   border-radius: 5px;
+   height: 350px;
 }
-#aboutme .container .row .card {
-   border: none;
-   box-shadow: 0 10px 25px 0 rgba(68, 88, 144, 0.1),
-      0 -10px 25px 0 rgba(68, 88, 144, 0.1);
+#aboutme .fa-thumbs-up {
+   color: #ff4081;
+   font-size: 30px;
+   margin-right: 5px;
 }
-#aboutme .container .row .card h6 {
+#aboutme .fa-hand-point-right,
+#aboutme .fa-check-circle,
+#aboutme .fa-arrow-alt-circle-right {
+   color: #2196f3;
+   font-size: 30px;
+   margin-right: 5px;
+}
+#aboutme h4 {
    font-weight: bold;
+   color: #ff4081;
 }
-#aboutme .container .row .card ul li {
-   list-style: none;
-}
-#aboutme .container .row .card ul li div {
-   display: inline-block;
-   border-radius: 50%;
-   border: 2px solid #ff4081;
-   width: 30px;
-   height: 30px;
-   text-align: center;
-}
-#aboutme .container .row .card button {
-   padding: 5px 15px;
-   border-radius: 5px;
-   color: #f5f5f5;
-   background-color: #ff4081;
-   outline: none;
-   border: 2px solid #ff4081;
-   margin: 10px 0;
-   box-shadow: 4px 4px 8px -1px rgba(0, 0, 0, 0.25),
-      -2px -2px 5px -1px rgba(255, 255, 255, 0.5);
-}
-#aboutme .container .row .card button:hover {
-   transition: all 0.5s;
-   transform: scale(0.95);
-   box-shadow: inset 4px 4px 8px -1px rgba(0, 0, 0, 0.25),
-      inset -2px -2px 5px -1px rgba(255, 255, 255, 0.5);
-}
-#aboutme .container .row .about-img img {
-   max-width: 100%;
-}
-#aboutme .container .row .about-text {
-   padding: 40px 0px;
-   line-height: 3;
+#aboutme h3 {
+   font-weight: bold;
+   color: #1976d2;
 }
 
 /* ========== About Me Section Style Ends========== */
@@ -330,45 +285,32 @@ progress::-moz-progress-bar {
 /* ========== Service Section Style Begins here========== */
 
 #services .container .card {
-   padding-top: 10px;
+   text-align: center;
    background: #ffffff;
    border-radius: 5px;
    border: 1px solid #ececec;
    box-shadow: 0 9px 18px rgba(0, 0, 0, 0.1), 0 5px 7px rgba(0, 0, 0, 0.05);
    transition: 0.3s ease-in-out;
-   margin-top: 20px;
 }
-#services .container .row .card .card-body {
-   padding-top: 10px;
-}
+
 #services .container .card:hover {
-   background-color: #fffcfc;
    color: #2196f3;
 }
-#services .container .row .card .icon {
-   text-align: center;
-}
 #services .container .row .card .icon img {
-   width: 45px;
-   height: 45px;
-   transition: 0.5s;
+   width: 50px;
+   height: 50px;
 }
 #services .container .row .card-title {
-   border-bottom: 2.5px solid #2196f3;
-   padding: 5px 0;
-   text-align: center;
    font-weight: bold;
-}
-#services .container .row .card .card-body .service-btn {
-   text-align: center;
 }
 #services .container .row .card .card-body .service-btn input[type='submit'] {
    background: #2196f3;
+   font-weight: bold;
    border: none;
    outline: none;
    border-radius: 5px;
    padding: 5px 15px;
-   color: #f5f5f5;
+   color: #f8f9fa;
    transition: 0.5s;
    box-shadow: 4px 4px 8px -1px rgba(0, 0, 0, 0.25),
       -4px -4px 8px -1px rgba(255, 255, 255);
@@ -388,149 +330,42 @@ progress::-moz-progress-bar {
 
 /* ========== Portfolio Section Style Begins here========== */
 
-#portfolio {
-  padding: 60px 0;
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+#portfolio .filter ul {
+   display: flex;
+   color: #ff4081;
 }
-
-#portfolio #portfolio-flters {
-  padding: 0;
-  margin: 5px 0 35px 0;
-  list-style: none;
-  text-align: center;
+#portfolio .filter ul li {
+   background: #eee;
+   padding: 5px 15px;
+   margin-right: 8px;
+   font-weight: 500;
+   cursor: pointer;
+   border-radius: 5px;
 }
-
-#portfolio #portfolio-flters li {
-  cursor: pointer;
-  margin: 15px 15px 15px 0;
-  display: inline-block;
-  padding: 6px 20px;
-  font-size: 12px;
-  line-height: 20px;
-  color: #007bff;
-  border-radius: 50px;
-  text-transform: uppercase;
-  background: #ecf5ff;
-  margin-bottom: 5px;
-  transition: all 0.3s ease-in-out;
+#portfolio .filter ul li.active {
+   background: #ff4081;
+   color: #f8f9fa;
 }
-
-#portfolio #portfolio-flters li:hover,
-#portfolio #portfolio-flters li.filter-active {
-  background: #007bff;
-  color: #fff;
+#portfolio .product {
+   display: flex;
+   flex-wrap: wrap;
 }
-
-#portfolio #portfolio-flters li:last-child {
-  margin-right: 0;
+#portfolio .product .itemBox {
+   position: relative;
+   width: 250px;
+   height: 250px;
+   margin: 5px;
 }
-
-#portfolio .portfolio-item {
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 30px;
-}
-
-#portfolio .portfolio-item .portfolio-wrap {
-  overflow: hidden;
-  position: relative;
-  border-radius: 6px;
-  margin: 0;
-}
-
-#portfolio .portfolio-item .portfolio-wrap:hover img {
-  opacity: 0.4;
-  transition: 0.3s;
-}
-
-#portfolio .portfolio-item .portfolio-wrap .portfolio-info {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  text-align: center;
-  opacity: 0;
-  transition: 0.2s linear;
-}
-
-#portfolio .portfolio-item .portfolio-wrap .portfolio-info h4 {
-  font-size: 22px;
-  line-height: 1px;
-  font-weight: 700;
-  margin-bottom: 14px;
-  padding-bottom: 0;
-}
-
-#portfolio .portfolio-item .portfolio-wrap .portfolio-info h4 a {
-  color: #fff;
-}
-
-#portfolio .portfolio-item .portfolio-wrap .portfolio-info h4 a:hover {
-  color: #007bff;
-}
-
-#portfolio .portfolio-item .portfolio-wrap .portfolio-info p {
-  padding: 0;
-  margin: 0;
-  color: #e2effe;
-  font-weight: 500;
-  font-size: 14px;
-  text-transform: uppercase;
-}
-
-#portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-preview,
-#portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-details {
-  display: inline-block;
-  line-height: 1;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  background: #007bff;
-  border-radius: 50%;
-  margin: 10px 4px 0 4px;
-}
-
-#portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-preview i,
-#portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-details i {
-  padding-top: 6px;
-  font-size: 22px;
-  color: #fff;
-}
-
-#portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-preview:hover,
-#portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-details:hover {
-  background: #3395ff;
-}
-
-#portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-preview:hover i,
-#portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-details:hover i {
-  color: #fff;
-}
-
-#portfolio .portfolio-item .portfolio-wrap:hover {
-  background: #003166;
-}
-
-#portfolio .portfolio-item .portfolio-wrap:hover .portfolio-info {
-  opacity: 1;
+#portfolio .product .itemBox img {
+   position: absolute;
+   border: 1px solid #ddd;
+   padding: 5px;
+   border-radius: 5px;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
 }
 
 /* ========== Portfolio Section Style Ends here========== */
@@ -538,37 +373,33 @@ progress::-moz-progress-bar {
 /* ========== Patronise  Section Style Ends here========== */
 
 #patronize .card {
-   margin-top: 20px;
    background: #2196f3;
    border-radius: 5px;
-   padding: 5px 0;
-   color: #f8f9fa;
-   transition: 0.3s ease-in-out;
+   color: #ffffff;
+   transition: 0.3s;
 }
 #patronize .card:hover {
    color: #2196f3;
-   background: #f8f9fa;
+   background: #ffffff;
 }
 
-#patronize .card h6 {
-   font-weight: bold;
-   border-bottom: 2.5px solid #ff4081;
-   padding-bottom: 5px;
+#patronize .card .card-title {
    text-align: center;
+   font-weight: bold;
 }
 #patronize .card ul li {
    list-style: none;
 }
 #patronize .card .card-body .fa-check-double {
-   color: #ff4081;
-   margin-right: 7px;
+   margin-right: 5px;
+   font-size: 25px;
 }
+
 /* ========== Patronise Section Style Ends here========== */
 
 /* ========== Contact Section Style Begins ========== */
 
 #contact .container .card {
-   margin-top: 15px;
    background: #ffffff;
    border: 1px solid #ececec;
    box-shadow: 0 9px 18px rgba(0, 0, 0, 0.1), 0 5px 7px rgba(0, 0, 0, 0.05);
@@ -651,11 +482,12 @@ progress::-moz-progress-bar {
 
 #contact .container .row .contact .form button[type='submit'] {
    background: #ff4081;
+   font-weight: bold;
    border: 2px solid #ff4081;
    outline: none;
    border-radius: 5px;
    padding: 10px 25px;
-   color: #f5f5f5;
+   color: #f8f9fa;
    transition: 0.5s;
    box-shadow: 4px 4px 8px -1px rgba(0, 0, 0, 0.3),
       -2px -2px 3px -1px rgba(255, 255, 255, 0.1);
@@ -708,8 +540,7 @@ progress::-moz-progress-bar {
 
 #client-testimonials .card {
    text-align: center;
-   margin: 40px 0px;
-   opacity: 0.4;
+   opacity: 0.67;
    color: #212121;
    background: #ffffff;
    border: 1px solid #ececec;
@@ -918,7 +749,8 @@ progress::-moz-progress-bar {
 
 @media only screen and (max-width: 768px) {
    section {
-      padding: 35px 0px;
+      padding-top: 1.5rem;
+      padding-bottom: 0.5rem;
    }
 
    .navbar .navbar-brand .profile-logo {
@@ -1019,6 +851,13 @@ progress::-moz-progress-bar {
 
    .intro .container .intro-but {
       text-align: center;
+   }
+
+   /* ======= Portfolio here section==========  */
+
+   #portfolio .product .itemBox {
+      width: 150px;
+      height: 150px;
    }
 
    /* ==========  Media Query footer Section  ========== */
