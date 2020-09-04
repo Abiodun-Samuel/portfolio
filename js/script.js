@@ -66,25 +66,4 @@ gsap.to('progress', {
 
 // scroll progress bar 
 
-new fullpage('#fullpage', {
-    navigation: true,
-    keyboardScrolling: true,
-    verticalCentered: false,
-    scrollingSpeed: 800,
-    autoScrolling: false,
-    css3: true,
-    navigation: true,
-    navigationPosition: 'right',
-    scrollbar: true,
-    navigationTooltips: [
-        'HomePage',
-        'AboutMe',
-        'Services',
-        'Portfolio',
-        'Why Patronize Us',
-        'Contact',
-        'Client Testimonials',
-        'Footer',
-    ],
-    // fixedElements: '#header, .footer',
-});
+

@@ -1,6 +1,23 @@
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+});
+
 $(document).ready(function () {
 
-    
+    //back to the top button
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 100) {
+            $(".back-top").fadeIn(400);
+        }
+        else {
+            $(".back-top").fadeOut(400);
+        }
+    });
+    $(".back-top").click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 500);
+    });
 
 
     //  Testimonial Carousel
@@ -32,32 +49,17 @@ $(document).ready(function () {
 
     // porfolio filter
 
-    $('.list').click(function () {
+    $('.portfolio-list').click(function () {
         const value = $(this).attr('data-filter');
         if (value == 'all') {
-            $('.itemBox').show('1000');
+            $('.portfolio-item').show('1000');
         }
         else {
-            $('.itemBox').not('.' + value).hide('1000');
-            $('.itemBox').filter('.' + value).show('1000');
+            $('.portfolio-item').not('.' + value).hide('1000');
+            $('.portfolio-item').filter('.' + value).show('1000');
         }
-        $('.list').click(function () {
+        $('.portfolio-list').click(function () {
             $(this).addClass('active').siblings().removeClass('active');
-        });
-    });
-
-    //back to the top button
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > 100) {
-            $(".back-top").fadeIn(400);
-        }
-        else {
-            $(".back-top").fadeOut(400);
-        }
-        $(".back-top").click(function () {
-            $("html, body").animate({
-                scrollTop: 0
-            }, 500);
         });
     });
 
