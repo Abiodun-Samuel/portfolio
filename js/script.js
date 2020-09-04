@@ -65,3 +65,26 @@ gsap.to('progress', {
 
 
 // scroll progress bar 
+
+new fullpage('#fullpage', {
+    autoScrolling: true,
+    navigation: true,
+    keyboardScrolling: true,
+    navigationTooltips: [
+        'HomePage',
+        'AboutMe',
+        'Services',
+        'Portfolio',
+        'Why Patronize Us',
+        'Contact',
+        'Client Testimonials',
+        'Footer',
+    ],
+    // fixedElements: '#header, .footer',
+    scrollBar: true,
+});
+// new fullpage('#fullpage', {
+//     autoScrolling: true,
+//     animateAnchor: true,
+//     recordHistory: true,
+// });

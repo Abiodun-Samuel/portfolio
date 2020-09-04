@@ -39,27 +39,6 @@ $(document).ready(function () {
         }
     });
 
-    $('#intro-carousel').owlCarousel({
-        loop: true,
-        center: false,
-        items: 8,
-        margin: 0,
-        autoplay: true,
-        dots: false,
-        autoplayTimeout: 2500,
-        smartSpeed: 450,
-        responsive: {
-            0: {
-                items: 4
-            },
-            768: {
-                items: 6
-            },
-            1170: {
-                items: 8
-            }
-        }
-    });
 
     // matchheight
     $('.card').matchHeight();
