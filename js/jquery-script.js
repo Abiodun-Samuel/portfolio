@@ -1,19 +1,6 @@
 $(document).ready(function () {
 
-    //back to the top button
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > 100) {
-            $(".back-top").fadeIn(400);
-        }
-        else {
-            $(".back-top").fadeOut(400);
-        }
-    });
-    $(".back-top").click(function () {
-        $("html, body").animate({
-            scrollTop: 0
-        }, 500);
-    });
+    
 
 
     //  Testimonial Carousel
@@ -58,6 +45,22 @@ $(document).ready(function () {
             $(this).addClass('active').siblings().removeClass('active');
         });
     });
+
+    //back to the top button
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 100) {
+            $(".back-top").fadeIn(400);
+        }
+        else {
+            $(".back-top").fadeOut(400);
+        }
+        $(".back-top").click(function () {
+            $("html, body").animate({
+                scrollTop: 0
+            }, 500);
+        });
+    });
+
 
 });
 

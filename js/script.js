@@ -67,9 +67,15 @@ gsap.to('progress', {
 // scroll progress bar 
 
 new fullpage('#fullpage', {
-    autoScrolling: true,
     navigation: true,
     keyboardScrolling: true,
+    verticalCentered: false,
+    scrollingSpeed: 800,
+    autoScrolling: false,
+    css3: true,
+    navigation: true,
+    navigationPosition: 'right',
+    scrollbar: true,
     navigationTooltips: [
         'HomePage',
         'AboutMe',
@@ -81,10 +87,4 @@ new fullpage('#fullpage', {
         'Footer',
     ],
     // fixedElements: '#header, .footer',
-    scrollBar: true,
 });
-// new fullpage('#fullpage', {
-//     autoScrolling: true,
-//     animateAnchor: true,
-//     recordHistory: true,
-// });
