@@ -47,7 +47,7 @@ p {
    width: 100%;
 }
 section {
-   padding: 80px 0px;
+   padding: 4rem 0;
 }
 section .section-header {
    text-align: center;
@@ -230,6 +230,9 @@ progress::-moz-progress-bar {
 
 .intro .container .intro-box .info {
    background: #ff4081;
+}
+.intro .container .intro-box .info a {
+   text-decoration: none;
    color: #f8f9fa;
 }
 .intro .container .intro-box .resume a {
@@ -750,7 +753,7 @@ progress::-moz-progress-bar {
 @media only screen and (max-width: 768px) {
    section {
       padding-top: 1.5rem;
-      padding-bottom: 0.5rem;
+      padding-bottom: 1rem;
    }
 
    .navbar .navbar-brand .profile-logo {
@@ -764,7 +767,7 @@ progress::-moz-progress-bar {
    }
    .navbar-nav {
       position: absolute;
-      right: -100%;
+      right: -1000%;
       height: 100vh;
       top: 65px;
       width: 65%;
@@ -805,7 +808,6 @@ progress::-moz-progress-bar {
    .navbar .container .nav-contact {
       display: block;
       padding-left: 15px;
-      font-size: 13px;
    }
    .navbar .container .nav-contact ul li {
       list-style: none;
