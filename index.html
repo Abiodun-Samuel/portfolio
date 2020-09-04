@@ -9,14 +9,13 @@
 
       <title>Home | Abiodun Digital Hub</title>
 
-
-      <!-- ========== google fonts =========== -->
+      <!-- ========== Google Font ========== -->
       <link
          href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:wght@400;500;700&display=swap"
          rel="stylesheet"
       />
 
-      <!-- ==========favicons==========  -->
+      <!-- ========== Favicons ==========  -->
       <link
          rel="icon"
          type="image/jpg"
@@ -24,40 +23,39 @@
          href="favicon/favicon.jpg"
       />
 
-      <!-- fontawesome icons -->
+      <!-- ========== FontAwesome Icons ========== -->
       <link href="fontawesome/css/all.css" rel="stylesheet" />
 
-      <!-- bootstrap style cdn -->
-      <!-- <link
+      <!-- ========== Bootstrap StyleSheet ========== -->
+      <link
          rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      />    -->
+         href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      />
 
-      <!--========== alternative to bootstrap cdn ========== -->
-      <link rel="stylesheet" href="css/bootstrap.min.css" />
+      <!-- ========== Libraries  ==========-->
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css"
+      />
 
-      <!-- ========== libraries and plugins ==========-->
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      />
 
-      <!-- owl carousel -->
-      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      />
 
-      <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-      <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"  /> -->
-
-      <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"  /> -->
-
-      <!--========== main stylesheet ==========-->
+      <!-- ========== Custom StyleSheet ========== -->
       <link rel="stylesheet" href="css/style.css" />
-
-   </head>  
-   <body>   
+   </head>
+   <body>
       <!-- scroll progress bar indicator -->
       <progress max="100" value="0"></progress>
-      <!-- scroll progress bar indicator -->
 
       <!-- ========== Header Section Begins Here ========== -->
-
       <header id="header">
          <nav id="navie" class="navbar navbar-expand-md fixed-top">
             <div class="container">
@@ -68,20 +66,20 @@
                      alt="profile-logo"
                /></a>
 
-               <div  class="navbar-nav ml-auto">
+               <div class="navbar-nav ml-auto">
                   <a class="nav-link active" href="index.html">
                      <i class="fas fa-home"></i> Home
                   </a>
-                  <a class="nav-link" href="#about">
+                  <a class="nav-link" href="#aboutme">
                      <i class="far fa-address-card"></i> About</a
                   >
                   <a class="nav-link" href="#services">
                      <i class="fab fa-usps"></i> Services</a
                   >
-                  <a class="nav-link" href="#porfolio">
-                     <i class="fas fa-briefcase"></i> Porfolio</a
+                  <a class="nav-link" href="#portfolio">
+                     <i class="fas fa-briefcase"></i> Portfolio</a
                   >
-                  <a class="nav-link" href="blog.html">
+                  <a class="nav-link" target="_blank" href="blog.html">
                      <i class="fab fa-blogger-b"></i> Blog</a
                   >
                   <a class="nav-link" href="#contact">
@@ -101,7 +99,7 @@
                      </ul>
                      <hr />
                      <a href="#"><i class="fab fa-whatsapp"></i></a>
-                     <a href=""><i class="fab fa-telegram-plane"></i></a>
+                     <a href="#"><i class="fab fa-telegram-plane"></i></a>
                      <a href="#"><i class="fab fa-facebook"></i></a>
                      <a href="#"><i class="fab fa-twitter"></i></a>
                      <a href="#"><i class="fab fa-instagram"></i></a>
@@ -117,607 +115,594 @@
             </div>
          </nav>
       </header>
-
       <!-- ========== Header Section Ends Here ========== -->
 
-
-      <!-- ==========Intro Section Begins Here========== -->
-
-      <div class="intro">  
-         <div class="container">
-            <div class="row">
-               <div class="col-md-6 ">
-                  <div class="intro-box">
-                     <h4>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Consectetur odit veritatis nihil qui nam vitae.
-                     </h4>
-                     <h6>
-                        Welcome to Abiodun Digital Hub
-                        <br />
-                        I'm Abiodun Samuel
-                        <br />
-                        A <span class="type"></span>
-                     </h6>
-                     <div class="intro-but">
-                        <button class="info">More-Info</button>
-                        <button class="resume">
-                           <a target="_blank"   href="image/Mr Abiodun Samuel CV.pdf">Resume</a>
-                        </button>
+      <div id="fullpage">
+         <!-- ========== Intro Section Begins Here ========== -->
+         <div class="section fp-auto-height">
+            <div class="intro">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-6">
+                        <div class="intro-box">
+                           <h4>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Consectetur odit veritatis nihil qui nam
+                              vitae.
+                           </h4>
+                           <h6>
+                              Welcome to Abiodun Digital Hub
+                              <br />
+                              I'm Abiodun Samuel
+                              <br />
+                              A <span class="type"></span>
+                           </h6>
+                           <div class="intro-but">
+                              <button class="info">
+                                 <a href="#aboutme">
+                                    <i class="fas fa-file-alt"></i> More</a
+                                 >
+                              </button>
+                              <button class="resume">
+                                 <a target="_blank" href="resume.html">
+                                    <i class="far fa-file"></i> Resume</a
+                                 >
+                              </button>
+                           </div>
+                        </div>
                      </div>
                   </div>
                </div>
             </div>
          </div>
-
-      </div> 
-
-
-      <!-- ==========Intro Section Ends Here========== -->
-      
-
-      <!-- ==========main section begins here ==========-->
-
-      <main id="main">
+         <!-- ========== Intro Section Ends Here ========== -->
 
          <!-- ========== About Me section Begins here ========== -->
+         <div class="section fp-auto-height">
+            <section id="aboutme">
+               <div class="container">
+                   <div class="section-header">
+                     <h5 class="header-red">About Me</h5>
+                  </div>
+                  <div class="row mt-5 mb-5">
+                     <div class="col-lg-4 ">
+                        <div class="profile-image">
+                           <img src="image/profile-image.jpg" class="img-fluid"  alt="profile-image">
+                        </div>
+                     </div>
+                     <div class="col-lg-8 pt-5">
+                        <h4>
+                           Voluptatem dignissimos provident quasi corporis 
+                        </h4>
 
-         <section id="aboutme" >
-            <div class="container">
-                <div class="section-header">
-                  <h5 class="header-red">About Me</h5>
-               </div>
-               <div class="row mt-5 mb-5">
-                  <div class="col-lg-4 ">
-                     <div class="profile-image">
-                        <img src="image/profile-image.jpg" class="img-fluid"  alt="profile-image">
+                        <p >
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                           eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <ul class="list-unstyled">
+                           <li>
+                              <i class="far fa-thumbs-up"></i> Ullamco laboris nisi ut aliquip
+                              ex ea commodo consequat.
+                           </li>
+                           <li>
+                              <i class="far fa-thumbs-up"></i></i> Duis aute irure dolor in
+                              reprehenderit in voluptate velit.
+                           </li>
+                           <li>
+                              <i class="far fa-thumbs-up"></i></i> Iure at voluptas aspernatur
+                              dignissimos doloribus repudiandae.
+                           </li>
+                        </ul>
+                        <p>
+                           Voluptas nisi in quia excepturi nihil voluptas nam et ut.
+                           Expedita omnis eum consequatur non. Sed in asperiores aut
+                        </p>
                      </div>
                   </div>
-                  <div class="col-lg-8 pt-5">
-                     <h4>
-                        Voluptatem dignissimos provident quasi corporis 
-                     </h4>
-                     
-                     <p >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                     </p>
-                     <ul class="list-unstyled">
-                        <li>
-                           <i class="far fa-thumbs-up"></i> Ullamco laboris nisi ut aliquip
-                           ex ea commodo consequat.
-                        </li>
-                        <li>
-                           <i class="far fa-thumbs-up"></i></i> Duis aute irure dolor in
-                           reprehenderit in voluptate velit.
-                        </li>
-                        <li>
-                           <i class="far fa-thumbs-up"></i></i> Iure at voluptas aspernatur
-                           dignissimos doloribus repudiandae.
-                        </li>
-                     </ul>
-                     <p>
-                        Voluptas nisi in quia excepturi nihil voluptas nam et ut.
-                        Expedita omnis eum consequatur non. Sed in asperiores aut
-                     </p>
-                  </div>
-               </div>
 
-               <div class="row mt-4 mb-4">
-                  <div class="col-lg-8 ">
-                      <h3>
-                        Web Development 
-                     </h3>
-                     <hr>
-                     <p >
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est aut beatae accusamus saepe nisi quaerat ea earum non consectetur repellendus!
-                     </p>
-                     <ul class="list-unstyled">
-                        <li>
-                           <i class="far fa-hand-point-right"></i> 
-                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam laborum explicabo nam debitis, aut quam.
-                        </li>
-                        <li>
-                           <i class="far fa-hand-point-right"></i>
-                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam laborum explicabo nam debitis, aut quam.
-                        </li>
-                        <li>
-                           <i class="far fa-hand-point-right"></i>
-                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam laborum explicabo nam debitis, aut quam.
-                        </li>
-                     </ul >
-                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo similique illum cupiditate et, in porro soluta quibusdam molestiae alias iusto.
-                     </p>
-                  </div>
-                  <div class="col-lg-4 ">
-                     <img src="image/web-development.png" class="img-fluid" alt="web-development-image" />
-                  </div>
-                  
-               </div>
-            
-               <div class="row mt-4 mb-4">
-                  <div class="col-lg-8  " > 
-                     <h3>
-                        UI/UX Design
-                     </h3>
-                     <hr>
-                     <p >
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est aut beatae accusamus saepe nisi quaerat ea earum non consectetur repellendus!
-                     </p>
-                     <ul class="list-unstyled">
-                        <li>
-                           <i class="fa fa-check-circle"></i> 
-                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam laborum explicabo nam debitis, aut quam.
-                        </li>
-                        <li>
-                           <i class="fa fa-check-circle"></i> 
-                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam laborum explicabo nam debitis, aut quam.
-                        </li>
-                        <li>
-                           <i class="fa fa-check-circle"></i> 
-                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam laborum explicabo nam debitis, aut quam.
-                        </li>
-                     </ul>
-                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo similique illum cupiditate et, in porro soluta quibusdam molestiae alias iusto.
-                     </p>
-                  </div>
-                  <div class="col-lg-4 ">
-                     <img src="image/ui-ux-design.jpg" class="img-fluid" alt="ui-ux-design-image" />
-                  </div>
-               </div>
+                  <div class="row mt-4 mb-4">
+                     <div class="col-lg-8 ">
+                         <h3>
+                           Web Development 
+                        </h3>
+                        <hr>
+                        <p >
+                           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est aut beatae accusamus  saepe nisi quaerat ea earum non consectetur repellendus!
+                        </p>
+                        <ul class="list-unstyled">
+                           <li>
+                              <i class="far fa-hand-point-right"></i> 
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam laborum    explicabo nam debitis, aut quam.
+                           </li>
+                           <li>
+                              <i class="far fa-hand-point-right"></i>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam laborum    explicabo nam debitis, aut quam.
+                           </li>
+                           <li>
+                              <i class="far fa-hand-point-right"></i>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam laborum    explicabo nam debitis, aut quam.
+                           </li>
+                        </ul >
+                        <p>
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo similique illum    cupiditate et, in porro soluta quibusdam molestiae alias iusto.
+                        </p>
+                     </div>
+                     <div class="col-lg-4 ">
+                        <img src="image/web-development.png" class="img-fluid" alt="web-development-image" />
+                     </div>
 
-               <div class="row mt-4 mb-4">
-                  <div class="col-lg-8">
-                      <h3>
-                        Digital Marketing
-                     </h3>
-                     <hr>
-                     <p >
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est aut beatae accusamus saepe nisi quaerat ea earum non consectetur repellendus!
-                     </p>
-                     <ul class="list-unstyled">
-                        <li>
-                           <i class="far fa-arrow-alt-circle-right"></i> 
-                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam laborum explicabo nam debitis, aut quam.
-                        </li>
-                        <li>
-                           <i class="far fa-arrow-alt-circle-right"></i> 
-                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam laborum explicabo nam debitis, aut quam.
-                        </li>
-                        <li>
-                           <i class="far fa-arrow-alt-circle-right"></i> 
-                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam laborum explicabo nam debitis, aut quam.
-                        </li>
-                     </ul>
-                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo similique illum cupiditate et, in porro soluta quibusdam molestiae alias iusto.
-                     </p>
+                  </div>
+               
+                  <div class="row mt-4 mb-4">
+                     <div class="col-lg-8  " > 
+                        <h3>
+                           UI/UX Design
+                        </h3>
+                        <hr>
+                        <p >
+                           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est aut beatae accusamus  saepe nisi quaerat ea earum non consectetur repellendus!
+                        </p>
+                        <ul class="list-unstyled">
+                           <li>
+                              <i class="fa fa-check-circle"></i> 
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam laborum    explicabo nam debitis, aut quam.
+                           </li>
+                           <li>
+                              <i class="fa fa-check-circle"></i> 
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam laborum    explicabo nam debitis, aut quam.
+                           </li>
+                           <li>
+                              <i class="fa fa-check-circle"></i> 
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam laborum    explicabo nam debitis, aut quam.
+                           </li>
+                        </ul>
+                        <p>
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo similique illum    cupiditate et, in porro soluta quibusdam molestiae alias iusto.
+                        </p>
+                     </div>
+                     <div class="col-lg-4 ">
+                        <img src="image/ui-ux-design.jpg" class="img-fluid" alt="ui-ux-design-image" />
+                     </div>
                   </div>
 
-                  <div class="col-lg-4 ">
-                     <img src="image/digital-marketing.jpg" class="img-fluid" alt="digital-marketing-image" />
+                  <div class="row mt-4 mb-4">
+                     <div class="col-lg-8">
+                         <h3>
+                           Digital Marketing
+                        </h3>
+                        <hr>
+                        <p >
+                           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est aut beatae accusamus  saepe nisi quaerat ea earum non consectetur repellendus!
+                        </p>
+                        <ul class="list-unstyled">
+                           <li>
+                              <i class="far fa-arrow-alt-circle-right"></i> 
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam laborum    explicabo nam debitis, aut quam.
+                           </li>
+                           <li>
+                              <i class="far fa-arrow-alt-circle-right"></i> 
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam laborum    explicabo nam debitis, aut quam.
+                           </li>
+                           <li>
+                              <i class="far fa-arrow-alt-circle-right"></i> 
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam laborum    explicabo nam debitis, aut quam.
+                           </li>
+                        </ul>
+                        <p>
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo similique illum    cupiditate et, in porro soluta quibusdam molestiae alias iusto.
+                        </p>
+                     </div>
+
+                     <div class="col-lg-4 ">
+                        <img src="image/digital-marketing.jpg" class="img-fluid" alt="digital-marketing-image" />
+                     </div>
                   </div>
                </div>
-            </div>
-         </section>
-
+            </section>
+         </div>
          <!-- ========== About Me  section Ends here ========== -->
 
-
          <!-- ========== Services section Begins here ========== -->
+         <div class="section fp-auto-height">
+            <section id="services">
+               <div class="container">
+                  <div class="section-header">
+                     <h5 class="header-blue">Services</h5>
+                  </div>
 
-         <section id="services">
-            <div class="container">
-               <div class="section-header">
-                  <h5 class="header-blue">Services</h5>
+                  <div class="row mt-5 mb-5">
+                     <div class="col-lg-6 col-md-6  mt-3 mb-3">
+                        <div class="card hover-border-blue pt-3">
+                           <div class="icon">
+                              <img src="image/web-development.svg" alt="" />  
+                           </div>
+                           <div class="card-body">
+                              <h5 class="card-title">Web Development</h5>
+                              <hr>
+                              <p class="card-text">
+                                 Lorem ipsum dolor sit amet consectetur adipisicing
+                                 elit. Corporis quas quasi iste neque at reiciendis
+                                 quaerat ducimus iure iusto ipsam?
+                              </p>
+                              <div class="service-btn">
+                                 <input type="submit" value="Get Started" />
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="col-lg-6 col-md-6 mt-3 mb-3">
+                        <div class="card hover-border-blue pt-3">
+                           <div class="icon">
+                              <img src="image/digital marketing.svg" alt="" />
+                           </div>
+                           <div class="card-body">
+                              <h5 class="card-title">Digital Marketing</h5> <hr>
+                              <p class="card-text">
+                                 Lorem ipsum dolor sit amet consectetur adipisicing
+                                 elit. Corporis quas quasi iste neque at reiciendis
+                                 quaerat ducimus iure iusto ipsam?
+                              </p>
+                              <div class="service-btn">
+                                 <input type="submit" value="Get Started" />
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="col-lg-6 col-md-6 mt-3 mb-3">
+                        <div class="card hover-border-blue pt-3">
+                           <div class="icon">
+                              <img src="image/seo.svg" alt="" />
+                           </div>
+                           <div class="card-body">
+                              <h5 class="card-title">Web Content</h4> <hr>
+                              <p class="card-text">
+                                 Lorem ipsum dolor sit amet consectetur adipisicing
+                                 elit. Corporis quas quasiiste neque at reiciendis
+                                 quaerat ducimus iure iusto ipsam?
+                              </p>
+                              <div class="service-btn">
+                                 <input type="submit" value="Get Started" />
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="col-lg-6 col-md-6 mt-3 mb-3">
+                        <div class="card hover-border-blue pt-3">
+                           <div class="icon">
+                              <img src="image/ui-ux design.svg" alt="" />
+                           </div>
+                           <div class="card-body">
+                              <h5 class="card-title">UI/UX Design</h5> <hr>
+                              <p class="card-text">
+                                 Lorem ipsum dolor sit amet consectetur adipisicing
+                                 elit. Corporis quas quasiiste neque at reiciendis
+                                 quaerat ducimus iure iust ipsam?
+                              </p>
+                              <div class="service-btn">
+                                 <input type="submit" value="Get Started" />
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
                </div>
-
-               <div class="row mt-5 mb-5">
-                  <div class="col-lg-6 col-md-6  mt-3 mb-3">
-                     <div class="card hover-border-blue pt-3">
-                        <div class="icon">
-                           <img src="image/web-development.svg" alt="" />  
-                        </div>
-                        <div class="card-body">
-                           <h5 class="card-title">Web Development</h5>
-                           <hr>
-                           <p class="card-text">
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Corporis quas quasi iste neque at reiciendis
-                              quaerat ducimus iure iusto ipsam?
-                           </p>
-                           <div class="service-btn">
-                              <input type="submit" value="Get Started" />
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-
-                  <div class="col-lg-6 col-md-6 mt-3 mb-3">
-                     <div class="card hover-border-blue pt-3">
-                        <div class="icon">
-                           <img src="image/digital marketing.svg" alt="" />
-                        </div>
-                        <div class="card-body">
-                           <h5 class="card-title">Digital Marketing</h5> <hr>
-                           <p class="card-text">
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Corporis quas quasi iste neque at reiciendis
-                              quaerat ducimus iure iusto ipsam?
-                           </p>
-                           <div class="service-btn">
-                              <input type="submit" value="Get Started" />
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-
-                  <div class="col-lg-6 col-md-6 mt-3 mb-3">
-                     <div class="card hover-border-blue pt-3">
-                        <div class="icon">
-                           <img src="image/seo.svg" alt="" />
-                        </div>
-                        <div class="card-body">
-                           <h5 class="card-title">Web Content</h4> <hr>
-                           <p class="card-text">
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Corporis quas quasiiste neque at reiciendis
-                              quaerat ducimus iure iusto ipsam?
-                           </p>
-                           <div class="service-btn">
-                              <input type="submit" value="Get Started" />
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-
-                  <div class="col-lg-6 col-md-6 mt-3 mb-3">
-                     <div class="card hover-border-blue pt-3">
-                        <div class="icon">
-                           <img src="image/ui-ux design.svg" alt="" />
-                        </div>
-                        <div class="card-body">
-                           <h5 class="card-title">UI/UX Design</h5> <hr>
-                           <p class="card-text">
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Corporis quas quasiiste neque at reiciendis
-                              quaerat ducimus iure iust ipsam?
-                           </p>
-                           <div class="service-btn">
-                              <input type="submit" value="Get Started" />
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         
+            </section>
+         </div>
          <!-- ========== Services section Ends here========== -->
 
-
          <!-- ========== Portfolio section Begins here========== -->
+         <div class="section fp-auto-height">
+            <section id="portfolio" >   
+               <div class="container">
+                  <div class="section-header">
+                     <h5 class="header-red">Portfolio</h5>
+                  </div>
 
-         <section id="portfolio">   
-            <div class="container">
-               <div class="section-header">
-                  <h5 class="header-red">Portfolio</h5>
+
+                 <div class="filter mt-5">
+                    <ul class="list-unstyled">
+                       <li class="list active" data-filter="all">All</li>
+                       <li class="list" data-filter="web">Web</li>
+                       <li class="list" data-filter="ui_ux_design">UI/UX</li>
+                       <li class="list" data-filter="javascript">Apps</li>
+                    </ul>
+                 </div> 
+
+                 <div class="product mb-3">
+                    <div class="itemBox web"><img src="image/portfolio/web-dev1.jpg" alt=""> </div>
+                    <div class="itemBox ui_ux_design"> <img src="image/portfolio/ui-ux-design1.jpg" alt=""> </ div>
+                    <div class="itemBox javascript"> <img src="image/portfolio/js-project1.jpg" alt=""> </div>
+                     <div class="itemBox web"><img src="image/portfolio/web-dev2.jpg" alt=""> </div>
+                    <div class="itemBox ui_ux_design"> <img src="image/portfolio/ui-ux-design2.jpg" alt=""> </ div>
+                    <div class="itemBox javascript"> <img src="image/portfolio/js-project2.jpg" alt=""> </div>
+                     <div class="itemBox web"><img src="image/portfolio/web-dev3.jpg" alt=""> </div>
+                    <div class="itemBox ui_ux_design"> <img src="image/portfolio/ui-ux-design3.jpg" alt=""> </ div>
+                    <div class="itemBox javascript"> <img src="image/portfolio/js-project3.jpg" alt=""> </div>
+                 </div>
                </div>
-
-
-              <div class="filter mt-5">
-                 <ul class="list-unstyled">
-                    <li class="list active" data-filter="all">All</li>
-                    <li class="list" data-filter="web">Web</li>
-                    <li class="list" data-filter="ui_ux_design">UI/UX</li>
-                    <li class="list" data-filter="javascript">Apps</li>
-                 </ul>
-              </div> 
-
-              <div class="product">
-                 <div class="itemBox web"><img src="image/portfolio/web-dev1.jpg" alt=""> </div>
-                 <div class="itemBox ui_ux_design"> <img src="image/portfolio/ui-ux-design1.jpg" alt=""> </div>
-                 <div class="itemBox javascript"> <img src="image/portfolio/js-project1.jpg" alt=""> </div>
-                  <div class="itemBox web"><img src="image/portfolio/web-dev2.jpg" alt=""> </div>
-                 <div class="itemBox ui_ux_design"> <img src="image/portfolio/ui-ux-design2.jpg" alt=""> </div>
-                 <div class="itemBox javascript"> <img src="image/portfolio/js-project2.jpg" alt=""> </div>
-                  <div class="itemBox web"><img src="image/portfolio/web-dev3.jpg" alt=""> </div>
-                 <div class="itemBox ui_ux_design"> <img src="image/portfolio/ui-ux-design3.jpg" alt=""> </div>
-                 <div class="itemBox javascript"> <img src="image/portfolio/js-project3.jpg" alt=""> </div>
-              </div>
-
-              
-            </div>
-         </section>  
-
+            </section> 
+         </div>
          <!-- ========== Porfolio section Ends here========== -->
 
          <!-- ============= What to Expect Section Begins here =========-->
+         <div class="section fp-auto-height">
+            <section id="patronize" >   
+               <div class="container">
+                  <div class="section-header">
+                     <h5 class="header-blue">What to Expect</h5>
+                  </div>
 
-         <section id="patronize">   
-            <div class="container">
-               <div class="section-header">
-                  <h5 class="header-blue">What to Expect</h5>
+                  <div class="row mt-5 mb-1">
+                     <div class="col-lg-4 col-md-6 mt-3 mb-3">
+                        <div class="card">
+                           <div class="card-body">
+                              <h5 class="card-title">Corporis dolorem</h5> <hr>
+                              <p class="card-text">
+                                 <ul>
+                                    <li><i class="fas fa-check-double"></i> Lorem, ipsum dolor sit amet  consectetur adipisicing elit. </li>
+                                    <li><i class="fas fa-check-double"></i> Lorem, ipsum dolor sit amet boy    consectetur adipisicing elit. </li>
+                                    <li><i class="fas fa-check-double"></i> Lorem, ipsum dolor sit amet  consectetur adipisicing elit. </li>
+                                 </ul>
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="col-lg-4 col-md-6 mt-3 mb-3">
+                        <div class="card">
+                           <div class="card-body">
+                              <h5 class="card-title">Corporis dolorem</h5> <hr>
+                              <p class="card-text">
+                                 <ul>
+                                    <li><i class="fas fa-check-double"></i> Lorem, ipsum dolor sit amet  consectetur adipisicing elit. </li>
+                                    <li><i class="fas fa-check-double"></i> Lorem, ipsum dolor sit amet boy    consectetur adipisicing elit. </li>
+                                    <li><i class="fas fa-check-double"></i> Lorem, ipsum dolor sit amet  consectetur adipisicing elit. </li>
+                                 </ul>
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="col-lg-4 col-md-12 mt-3 mb-3">
+                        <div class="card">
+                           <div class="card-body">
+                              <h5 class="card-title">Corporis dolorem</h5> <hr>
+                              <p class="card-text">
+                                 <ul>
+                                    <li><i class="fas fa-check-double"></i> Lorem, ipsum dolor sit amet  consectetur adipisicing elit. </li>
+                                    <li><i class="fas fa-check-double"></i> Lorem, ipsum dolor sit amet boy    consectetur adipisicing elit. </li>
+                                    <li><i class="fas fa-check-double"></i> Lorem, ipsum dolor sit amet  consectetur adipisicing elit. </li>
+                                 </ul>
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
                </div>
-
-               <div class="row mt-5 mb-1">
-                  <div class="col-lg-4 col-md-6 mt-3 mb-3">
-                     <div class="card">
-                        <div class="card-body">
-                           <h5 class="card-title">Corporis dolorem</h5> <hr>
-                           <p class="card-text">
-                              <ul>
-                                 <li><i class="fas fa-check-double"></i> Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
-                                 <li><i class="fas fa-check-double"></i> Lorem, ipsum dolor sit amet boy consectetur adipisicing elit. </li>
-                                 <li><i class="fas fa-check-double"></i> Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
-                              </ul>
-                           </p>
-                        </div>
-                     </div>
-                  </div>
-
-                  <div class="col-lg-4 col-md-6 mt-3 mb-3">
-                     <div class="card">
-                        <div class="card-body">
-                           <h5 class="card-title">Corporis dolorem</h5> <hr>
-                           <p class="card-text">
-                              <ul>
-                                 <li><i class="fas fa-check-double"></i> Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
-                                 <li><i class="fas fa-check-double"></i> Lorem, ipsum dolor sit amet boy consectetur adipisicing elit. </li>
-                                 <li><i class="fas fa-check-double"></i> Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
-                              </ul>
-                           </p>
-                        </div>
-                     </div>
-                  </div>
-
-                  <div class="col-lg-4 col-md-12 mt-3 mb-3">
-                     <div class="card">
-                        <div class="card-body">
-                           <h5 class="card-title">Corporis dolorem</h5> <hr>
-                           <p class="card-text">
-                              <ul>
-                                 <li><i class="fas fa-check-double"></i> Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
-                                 <li><i class="fas fa-check-double"></i> Lorem, ipsum dolor sit amet boy consectetur adipisicing elit. </li>
-                                 <li><i class="fas fa-check-double"></i> Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
-                              </ul>
-                           </p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-
+            </section>
+         </div>
          <!--============== What to Expect Section Section Ends here======-->
 
          <!-- ========== Contact Section Begins Here ========== -->
+         <div class="section fp-auto-height">
+            <section id="contact" >
+               <div class="container">
+                  <div class="section-header">
+                     <h5 class="header-red">Contact Me</h5>
+                  </div>
 
-         <section id="contact">
-            <div class="container">
-               <div class="section-header">
-                  <h5 class="header-red">Contact Me</h5>
-               </div>
-               
-               <div class="row mt-5 mb-3">
-                  <div class="col-lg-6 col-md-6">
-                     <div class="card hover-border">
-                        <div class="card-body">
-                           <h6 class="card-title">Lorem ipsum dolor sit amet.</h6>
-                           <p class="card-text">
-                              <hr>
-                              <ul>
-                                 <li>
-                                    <div><i class="fas fa-user-clock"></i></div> Working Hours: Mon - Fri: 9AM to 5PM,  Sun: 9AM to 1PM
-                                 </li>
-                                 <li> <div><i class="fas fa-map-marker-alt "></i></div> 
-                                    A108 Adam Street
-                                    New York, NY 535022
-                                    United States</li>
-                                 <li>
-                                    <a href=""><div> <i class="fas fa-phone-alt "></i></div> +1
-                                    5589 55488 55 </a>
-                                    
-                                 </li>
-                                 <li>
-                                    <a href="
-                                    "><div><i class="far fa-envelope"></i></div>  info@example.com</a>
-                                    
-                                 </li>
-                                 
-                              </ul>
-                              <hr>
-                              <div class="contact-icons">
-                                 <a href="#"><i class="fab fa-whatsapp"></i></a>
-                                 <a href=""><i class="fab fa-telegram-plane"></i></a>
-                                 <a href="#"><i class="fab fa-facebook"></i></a>
-                                 <a href="#"><i class="fab fa-twitter"></i></a>
-                                 <a href="#"><i class="fab fa-instagram"></i></a>
-                                 <a href="#"><i class="fab fa-linkedin"></i></a>
-                              </div>
-                           </p>
-                              
+                  <div class="row mt-5 mb-3">
+                     <div class="col-lg-6 col-md-6">
+                        <div class="card hover-border">
+                           <div class="card-body">
+                              <h6 class="card-title">Lorem ipsum dolor sit amet.</h6>
+                              <p class="card-text">
+                                 <hr>
+                                 <ul>
+                                    <li>
+                                       <div><i class="fas fa-user-clock"></i></div> Working Hours: Mon - Fri:  9AM to 5PM,  Sun: 9AM to 1PM
+                                    </li>
+                                    <li> <div><i class="fas fa-map-marker-alt "></i></div> 
+                                       A108 Adam Street
+                                       New York, NY 535022
+                                       United States</li>
+                                    <li>
+                                       <a href=""><div> <i class="fas fa-phone-alt "></i></div> +1
+                                       5589 55488 55 </a>
+                                       
+                                    </li>
+                                    <li>
+                                       <a href="
+                                       "><div><i class="far fa-envelope"></i></div>  info@example.com</a>
+
+                                    </li>
+
+                                 </ul>
+                                 <hr>
+                                 <div class="contact-icons">
+                                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                                    <a href=""><i class="fab fa-telegram-plane"></i></a>
+                                    <a href="#"><i class="fab fa-facebook"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                 </div>
+                              </p>
+
+                           </div>
                         </div>
                      </div>
-                  </div>
-                  
-                  <div class="col-lg-6 col-md-6">
-                     <div class="card hover-border">
-                        <div class="card-body">
-                           <div class="contact">
-                              <div class="form">
-                                 <div id="sendmessage">
-                                    Your message has been sent. Thank you!
-                                 </div>
-                                 <div id="errormessage"></div>
-                                 <form
-                                    action=""
-                                    method="post"
-                                    role="form"
-                                    class="contactForm">
 
-                                    <div class="form-row">
-                                       <div class="form-group col-lg-6">
-                                          <input
-                                             type="text"
-                                             name="name"
-                                             class="form-control"
-                                             id="name"
-                                             placeholder="Name"
-                                             data-rule="minlen:4"
-                                             data-msg="Please enter at least 4 chars"
-                                          />
-                                          <div class="validation"></div>
-                                       </div>
-                                       <div class="form-group col-lg-6">
-                                          <input
-                                             type="number"
-                                             class="form-control"
-                                             name="phone"
-                                             id="phone"
-                                             placeholder="Phone Number"
-                                             data-rule="phone"
-                                             data-msg="Please enter a valid phone number"
-                                          />
-                                       </div>
-                                       <div class="form-group col-lg-12">
-                                          <input
-                                             type="email"
-                                             class="form-control"
-                                             name="email"
-                                             id="email"
-                                             placeholder="Your Email"
-                                             data-rule="email"
-                                             data-msg="Please enter a valid email"
-                                          />
-                                          <div class="validation"></div>
-                                       </div>
-                                             
-                                       <div class="form-group col-lg-12">
-                                          <textarea
-                                             class="form-control"
-                                             name="message"
-                                             rows="4"
-                                             data-rule="required"
-                                             data-msg="Please write something for us"
-                                             placeholder="Message"
-                                          ></textarea>
-                                          <div class="validation"></div>
-                                       </div>
+                     <div class="col-lg-6 col-md-6">
+                        <div class="card hover-border">
+                           <div class="card-body">
+                              <div class="contact">
+                                 <div class="form">
+                                    <div id="sendmessage">
+                                       Your message has been sent. Thank you!
                                     </div>
-                                    <div class="text-center">
-                                       <button type="submit" title="Send Message">
-                                          Send Message
-                                       </button>
-                                    </div>
-                                 </form>
+                                    <div id="errormessage"></div>
+                                    <form
+                                       action=""
+                                       method="post"
+                                       role="form"
+                                       class="contactForm">
+
+                                       <div class="form-row">
+                                          <div class="form-group col-lg-6">
+                                             <input
+                                                type="text"
+                                                name="name"
+                                                class="form-control"
+                                                id="name"
+                                                placeholder="Name"
+                                                data-rule="minlen:4"
+                                                data-msg="Please enter at least 4 chars"
+                                             />
+                                             <div class="validation"></div>
+                                          </div>
+                                          <div class="form-group col-lg-6">
+                                             <input
+                                                type="number"
+                                                class="form-control"
+                                                name="phone"
+                                                id="phone"
+                                                placeholder="Phone Number"
+                                                data-rule="phone"
+                                                data-msg="Please enter a valid phone number"
+                                             />
+                                          </div>
+                                          <div class="form-group col-lg-12">
+                                             <input
+                                                type="email"
+                                                class="form-control"
+                                                name="email"
+                                                id="email"
+                                                placeholder="Your Email"
+                                                data-rule="email"
+                                                data-msg="Please enter a valid email"
+                                             />
+                                             <div class="validation"></div>
+                                          </div>
+
+                                          <div class="form-group col-lg-12">
+                                             <textarea
+                                                class="form-control"
+                                                name="message"
+                                                rows="4"
+                                                data-rule="required"
+                                                data-msg="Please write something for us"
+                                                placeholder="Message"
+                                             ></textarea>
+                                             <div class="validation"></div>
+                                          </div>
+                                       </div>
+                                       <div class="text-center">
+                                          <button type="submit" title="Send Message">
+                                             Send Message
+                                          </button>
+                                       </div>
+                                    </form>
+                                 </div>
                               </div>
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
-            </div>
-         </section>
-
+            </section>
+         </div>
          <!-- ========== Contact Section Ends Here ========== -->
 
-
          <!-- ========== Testimonial Section Begins Here ========== -->
+         <div class="section fp-auto-height">
+            <section id="testimonials">
+            	<div class="container">
+                  <div class="section-header">
+                     <h5 class="header-blue">What Clients Say</h5>
+                  </div>
+                  <div class="row mt-5 mb-3">
+                    <div class="col-lg-12">
+                      <div id="client-testimonials" class="owl-carousel">
 
-        
-         <section id="testimonials">
-         	<div class="container">
-               <div class="section-header">
-                  <h5 class="header-blue">What Clients Say</h5>
+                        <div class="card mb-4">
+                           <div class="client-num client-order">1</div>
+                           <div class="card-body">
+                              <img src="image/test3.png" alt="">
+                                 <div class="client-name">Lorem, ipsum dolor.</div>
+
+                              <p class="card-text">
+                                 <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur  adipisicing elit. Hic consequuntur sequi ad ipsa minus enim assumenda tempore  quam corporis quasi.  <i class="fas fa-quote-right"></i>
+                              </p>
+                           </div>
+                            <div class="client-order"> <i class="fas fa-ribbon"></i> </div>
+                        </div>
+
+                        <div class="card mb-4">
+                           <div class="client-num client-order">2</div>
+                           <div class="card-body">
+                              <img src="image/test3.png" alt="">
+                                 <div class="client-name">Lorem, ipsum dolor.</div>
+
+                              <p class="card-text">
+                                 <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur  adipisicing elit. Hic consequuntur sequi ad ipsa minus enim assumenda tempore  quam corporis quasi.  <i class="fas fa-quote-right"></i>
+                              </p>
+                           </div>
+                            <div class="client-order"> <i class="fas fa-ribbon"></i> </div>
+                        </div>
+
+                        <div class="card mb-4">
+                           <div class="client-num client-order">3</div>
+                           <div class="card-body">
+                              <img src="image/test3.png" alt="">
+                                 <div class="client-name">Lorem, ipsum dolor.</div>
+
+                              <p class="card-text">
+                                 <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur  adipisicing elit. Hic consequuntur sequi ad ipsa minus enim assumenda tempore  quam corporis quasi.  <i class="fas fa-quote-right"></i>
+                              </p>
+                           </div>
+                            <div class="client-order"> <i class="fas fa-ribbon"></i> </div>
+                        </div>
+
+                        <div class="card mb-4">
+                           <div class="client-num client-order">4</div>
+                           <div class="card-body">
+                              <img src="image/test3.png" alt="">
+                                 <div class="client-name">Lorem, ipsum dolor.</div>
+
+                              <p class="card-text">
+                                 <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur  adipisicing elit. Hic consequuntur sequi ad ipsa minus enim assumenda tempore  quam corporis quasi.  <i class="fas fa-quote-right"></i>
+                              </p>
+                           </div>
+                            <div class="client-order"> <i class="fas fa-ribbon"></i> </div>
+                        </div>
+
+                        <div class="card mb-4">
+                           <div class="client-num client-order">5</div>
+                           <div class="card-body">
+                              <img src="image/test3.png" alt="">
+                                 <div class="client-name">Lorem, ipsum dolor.</div>
+
+                              <p class="card-text">
+                                 <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur  adipisicing elit. Hic consequuntur sequi ad ipsa minus enim assumenda tempore  quam corporis quasi.  <i class="fas fa-quote-right"></i>
+                              </p>
+                           </div>
+                            <div class="client-order"> <i class="fas fa-ribbon"></i> </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                </div>
-               <div class="row mt-5 mb-3">
-                 <div class="col-lg-12">
-                   <div id="client-testimonials" class="owl-carousel">
-
-                     <div class="card">
-                        <div class="client-num client-order">1</div>
-                        <div class="card-body">
-                           <img src="image/test3.png" alt="">
-                              <div class="client-name">Lorem, ipsum dolor.</div>
-
-                           <p class="card-text">
-                              <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic consequuntur sequi ad ipsa minus enim assumenda tempore quam corporis quasi.  <i class="fas fa-quote-right"></i>
-                           </p>
-                        </div>
-                         <div class="client-order"> <i class="fas fa-ribbon"></i> </div>
-                     </div>
-
-                     <div class="card">
-                        <div class="client-num client-order">2</div>
-                        <div class="card-body">
-                           <img src="image/test3.png" alt="">
-                              <div class="client-name">Lorem, ipsum dolor.</div>
-
-                           <p class="card-text">
-                              <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic consequuntur sequi ad ipsa minus enim assumenda tempore quam corporis quasi.  <i class="fas fa-quote-right"></i>
-                           </p>
-                        </div>
-                         <div class="client-order"> <i class="fas fa-ribbon"></i> </div>
-                     </div>
-
-                     <div class="card">
-                        <div class="client-num client-order">3</div>
-                        <div class="card-body">
-                           <img src="image/test3.png" alt="">
-                              <div class="client-name">Lorem, ipsum dolor.</div>
-
-                           <p class="card-text">
-                              <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic consequuntur sequi ad ipsa minus enim assumenda tempore quam corporis quasi.  <i class="fas fa-quote-right"></i>
-                           </p>
-                        </div>
-                         <div class="client-order"> <i class="fas fa-ribbon"></i> </div>
-                     </div>
-
-                     <div class="card">
-                        <div class="client-num client-order">4</div>
-                        <div class="card-body">
-                           <img src="image/test3.png" alt="">
-                              <div class="client-name">Lorem, ipsum dolor.</div>
-
-                           <p class="card-text">
-                              <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic consequuntur sequi ad ipsa minus enim assumenda tempore quam corporis quasi.  <i class="fas fa-quote-right"></i>
-                           </p>
-                        </div>
-                         <div class="client-order"> <i class="fas fa-ribbon"></i> </div>
-                     </div>
-
-                     <div class="card">
-                        <div class="client-num client-order">5</div>
-                        <div class="card-body">
-                           <img src="image/test3.png" alt="">
-                              <div class="client-name">Lorem, ipsum dolor.</div>
-
-                           <p class="card-text">
-                              <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic consequuntur sequi ad ipsa minus enim assumenda tempore quam corporis quasi.  <i class="fas fa-quote-right"></i>
-                           </p>
-                        </div>
-                         <div class="client-order"> <i class="fas fa-ribbon"></i> </div>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-
-            </div>
-         </section>
-
+            </section>
+         </div>
          <!-- ========== Testimonial Section Ends Here ========== -->
-        
-      </main>
 
-      <!-- ==========main section begins here ==========-->
+      </div>
 
-
-
-      <!-- ==========Footer Section Begins Here========== -->
-
+      <!-- ========== Footer Section Begins Here ========== -->
       <footer id="footer">
          <div class="container">
             <div class="row">
@@ -823,47 +808,32 @@
             </div>
          </div>
       </footer>
+      <!-- ========== Footer Section Ends Here ========== -->
 
-      <!-- ==========Footer Section Ends Here========== -->
-
-
-      <!-- ==========back to the top button========== -->
-
+      <!-- ========== Back to the top button ========== -->
       <div class="back-top">
          <i class="fas fa-arrow-alt-circle-up"></i>
       </div>
 
+      <!-- ========== Script Files ========== -->
 
-      <!-- ========== script files ========== -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-      <!-- fontawesome icons -->
       <script src="fontawesome/js/all.min.js"></script>
 
-      <!-- jquery for bootstrap -->
-      <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
-      <script src="js/jquery.3.5.1.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
 
-      <!-- owl-carousel -->
-      <script src="js/owl.carousel.min.js"></script>
-      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-      <!-- matchHeight -->
-      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js" ></script> -->
-      <script src="js/jquery.matchHeight-min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
 
-      <!-- bootstrap javascript file -->
-      <script src="js/bootstrap.min.js"></script>
-      <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> -->
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 
-      <!-- js typing effect -->
-      <script src="js/typed.min.js"></script>
-      <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script> -->
-
-      <!-- plugin for scroll progress bar -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.min.js"></script>
-      <!-- plugin for scroll progress bar -->
 
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 
@@ -872,6 +842,5 @@
 
       <!-- main  javascript file -->
       <script src="js/script.js"></script>
-
    </body>
 </html>
