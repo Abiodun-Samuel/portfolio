@@ -152,7 +152,8 @@ progress::-moz-progress-bar {
    border-bottom: 3px solid #ff4081;
 }
 
-.navbar .container .nav-contact {
+.navbar .container .nav-contact,
+.navbar .container .easy-nav {
    display: none;
 }
 .burger {
@@ -181,17 +182,13 @@ progress::-moz-progress-bar {
 /* ========== Intro Section Style Begins here========== */
 .intro {
    padding-top: 150px;
-   padding-bottom: 50px;
    /* background-image: url('https://myimage.imfast.io/background-intro.jpg'), linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)); */
    background-image: url('../image/background-intro.jpg'),
-      linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
+      linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15));
    background-blend-mode: overlay;
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
-   height: auto;
-   border: 1px solid #ececec;
-   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.05);
 }
 .intro .container .intro-box h4,
 .intro .container .intro-box h6 {
@@ -213,14 +210,14 @@ progress::-moz-progress-bar {
 }
 .intro .container .intro-box button {
    font-weight: bold;
-   padding: 8px 20px;
+   padding: 6px 15px;
    border-radius: 5px;
    outline: none;
    border: 2px solid #ff4081;
    margin: 0px 15px 0 0;
    box-shadow: 4px 4px 8px -1px rgba(0, 0, 0, 0.25);
    /* -2px -2px 5px -1px rgba(255, 255, 255, 0.5); */
-   transition: all 0.5s;
+   transition: 0.5s ease-in-out;
 }
 .intro .container .intro-box button:hover {
    transform: scale(0.9);
@@ -239,7 +236,67 @@ progress::-moz-progress-bar {
    text-decoration: none;
    color: #212121;
 }
+.intro .scroll-down h4 {
+   margin-top: 15px;
+   text-align: center;
+}
+.intro .scroll-down a {
+   text-decoration: none;
+   color: #ff4081;
+}
+.intro .scroll-down a .fa-angle-double-down {
+   font-size: 25px;
+   position: relative;
+   animation: scroll-movement 1.5s infinite;
+}
+@keyframes scroll-movement {
+   from {
+      top: 0px;
+   }
+   to {
+      top: 15px;
+   }
+}
+.container-fluid .scroll-text {
+   display: flex;
+   overflow: hidden;
+   width: 100%;
+   position: relative;
+}
+.container-fluid .scroll-text div {
+   position: relative;
+   width: 50%;
+   overflow: hidden;
+}
+.container-fluid .scroll-text div:nth-child(1) {
+   background: url('../image/bg-top-red.svg') top,
+      url('../image/bg-bottom-red.svg') bottom, #ffffff;
+   position: relative;
+   width: 50%;
+   overflow: hidden;
+}
+.container-fluid .scroll-text div:nth-child(1) h4 {
+   -webkit-text-stroke: 2px;
+   -webkit-text-stroke-color: blue;
+   -webkit-text-fill-color: transparent;
+   left: 100%;
+}
 
+.container-fluid .scroll-text h4 {
+   position: relative;
+   white-space: nowrap;
+   color: red;
+   animation: animate 30s linear infinite;
+}
+
+@keyframes animate {
+   0% {
+      transform: translateX(0);
+   }
+   100% {
+      transform: translateX(-100%);
+   }
+}
 /* ========== Intro Section Style Ends========== */
 
 /* ==========  About Me Section Style Begins========== */
@@ -254,13 +311,13 @@ progress::-moz-progress-bar {
    position: absolute;
    left: 15px;
    top: 15px;
-   width: 250px;
-   height: 350px;
+   width: 200px;
+   height: 300px;
 }
 #aboutme .profile-image img {
    border-radius: 5px;
-   width: 250px;
-   height: 350px;
+   width: 200px;
+   height: 300px;
 }
 #aboutme .fa-thumbs-up {
    color: #ff4081;
@@ -860,25 +917,6 @@ progress::-moz-progress-bar {
 .back-top:hover {
    transform: scale(1.15);
 }
-/* ==========  ease nav style begins ========== */
-
-.ease-nav {
-   display: flex;
-   flex-direction: column;
-   position: fixed;
-   top: 30vh;
-   right: 0;
-   font-size: 10px;
-   color: #ff4081;
-}
-.ease-nav a {
-   color: #ff4081;
-   margin: 10px 5px;
-   transition: 350ms;
-}
-.ease-nav a:hover {
-   transform: scale(1.6);
-}
 
 /* ==========back to the top button style ends========== */
 
@@ -917,7 +955,8 @@ progress::-moz-progress-bar {
       color: #1976d2;
       transition: 0.5s;
    }
-   .burger {
+   .burger,
+   .navbar .container .easy-nav {
       display: block;
    }
    .nav-active {
@@ -984,6 +1023,47 @@ progress::-moz-progress-bar {
       height: 100vh;
       top: 55px;
       transition: all 0.5s;
+   }
+   .navbar .container .easy-nav a {
+      margin-right: 15px;
+      color: #2196f3;
+   }
+
+   .navbar .container .easy-nav a:hover {
+      color: #ff4081;
+   }
+   .navbar .container .easy-nav .mytooltip {
+      position: relative;
+      display: inline-block;
+   }
+   .navbar .container .easy-nav .tooltiptext {
+      visibility: hidden;
+      width: 120px;
+      background-color: #2196f3;
+      opacity: 0.89;
+      color: #fff;
+      font-weight: 500;
+      text-align: center;
+      border-radius: 5px;
+      padding: 5px;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -60px;
+      z-index: 1;
+   }
+   .navbar .container .easy-nav .mytooltip .tooltiptext::after {
+      content: ' ';
+      position: absolute;
+      bottom: 100%;
+      left: 45%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent transparent #2196f3 transparent;
+   }
+   .navbar .container .easy-nav .mytooltip:hover .tooltiptext {
+      visibility: visible;
    }
    /* ==========Media Queries for Nav Ends here section==========  */
 
