@@ -1,8 +1,7 @@
+// animate on scroll
+AOS.init();
 
-
-
-// ========== Nav Toggle effects ==========
-
+// ========== Nav Toggle  toggle effects ==========
 const navSlide = () => {
 
     const burger = document.querySelector(".burger");
@@ -17,13 +16,11 @@ const navSlide = () => {
         burger.classList.toggle('toggle');
         burgerborder.classList.toggle('burg');
         scroll.classList.toggle('no-scroll');
-
     });
 }
 navSlide();
 
 // ========== Navbar scroll effects ==========
-
 window.onscroll = function () {
     myFunction();
 }
@@ -39,7 +36,6 @@ function myFunction() {
 };
 
 // ==========type js typing effect========== 
-
 var typed = new Typed('.type', {
     strings: ['Web Developer', 'UI-UX Designer', 'Digital Marketer'],
     typeSpeed: 50,
@@ -47,15 +43,7 @@ var typed = new Typed('.type', {
     loop: true,
 });
 
-
-
-// ==========typing effect ends here==========
-
-// ==========back to the top button==========
-
-
-
-
+// scroll progress bar 
 gsap.registerPlugin(ScrollTrigger);
 gsap.to('progress', {
     value: 100,
@@ -64,6 +52,7 @@ gsap.to('progress', {
 });
 
 
-// scroll progress bar 
+// 
+
 
 

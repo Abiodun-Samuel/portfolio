@@ -1,7 +1,3 @@
-$(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-});
-
 $(document).ready(function () {
 
     //back to the top button
@@ -43,12 +39,10 @@ $(document).ready(function () {
         }
     });
 
-
     // matchheight
     $('.card').matchHeight();
 
     // porfolio filter
-
     $('.portfolio-list').click(function () {
         const value = $(this).attr('data-filter');
         if (value == 'all') {
