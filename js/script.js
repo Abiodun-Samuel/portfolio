@@ -1,58 +1,56 @@
-// animate on scroll
-AOS.init();
+// drawer menu
+function myDrawer() {
+  var showDrawer = document.getElementById("drawer-content");
+  if (showDrawer.style.opacity === "0") {
+    (showDrawer.style.opacity = "1"), (showDrawer.style.transition = "500ms");
+  } else {
+    (showDrawer.style.opacity = "0"), (showDrawer.style.transition = "500ms");
+  }
+}
 
 // ========== Nav Toggle  toggle effects ==========
 const navSlide = () => {
+  const burger = document.querySelector(".burger");
+  const navmenu = document.querySelector(".navbar-nav");
+  const burgerborder = document.querySelector(".burger");
 
-    const burger = document.querySelector(".burger");
-    const navmenu = document.querySelector(".navbar-nav");
-    const burgerborder = document.querySelector(".burger");
-    const scroll = document.querySelector("body");
-
-    // toggle nav
-    burger.addEventListener("click", () => {
-
-        navmenu.classList.toggle('nav-active');
-        burger.classList.toggle('toggle');
-        burgerborder.classList.toggle('burg');
-        scroll.classList.toggle('no-scroll');
-    });
-}
+  // toggle nav
+  burger.addEventListener("click", () => {
+    navmenu.classList.toggle("nav-active");
+    burger.classList.toggle("toggle");
+    burgerborder.classList.toggle("burg");
+  });
+};
 navSlide();
+
 
 // ========== Navbar scroll effects ==========
 window.onscroll = function () {
-    myFunction();
-}
+  myFunction();
+};
 var nav = document.getElementById("navie");
 var sticky = nav.offsetTop;
 
 function myFunction() {
-    if (window.pageYOffset > sticky) {
-        nav.classList.add("sticky");
-    } else {
-        nav.classList.remove("sticky");
-    }
-};
+  if (window.pageYOffset > sticky) {
+    nav.classList.add("sticky");
+  } else {
+    nav.classList.remove("sticky");
+  }
+}
 
-// ==========type js typing effect========== 
-var typed = new Typed('.type', {
-    strings: ['Web Developer', 'UI-UX Designer', 'Digital Marketer'],
-    typeSpeed: 50,
-    backSpeed: 50,
-    loop: true,
+// ==========type js typing effect==========
+var typed = new Typed(".type", {
+  strings: ["Web Developer", "UI-UX Designer", "Digital Marketer"],
+  typeSpeed: 50,
+  backSpeed: 50,
+  loop: true,
 });
 
-// scroll progress bar 
+// scroll progress bar
 gsap.registerPlugin(ScrollTrigger);
-gsap.to('progress', {
-    value: 100,
-    ease: 'none',
-    scrollTrigger: { scrub: 0.3 }
+gsap.to("progress", {
+  value: 100,
+  ease: "none",
+  scrollTrigger: { scrub: 0.3 },
 });
-
-
-// 
-
-
-
