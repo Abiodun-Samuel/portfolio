@@ -71,7 +71,6 @@ function getSamePageAnchor (link) {
 
   return link.hash;
 }
-
 // Scroll to a given hash, preventing the event given if there is one
 function scrollToHash(hash, e) {
   const elem = hash ? document.querySelector(hash) : false;
@@ -80,7 +79,6 @@ function scrollToHash(hash, e) {
     gsap.to(window, {scrollTo: elem});
   }
 }
-
 // If a link's href is within the current page, scroll to it instead
 document.querySelectorAll('a[href]').forEach(a => {
   a.addEventListener('click', e => {
@@ -90,3 +88,4 @@ document.querySelectorAll('a[href]').forEach(a => {
 
 // Scroll to the element in the URL's hash on load
 scrollToHash(window.location.hash);
+
