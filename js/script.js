@@ -58,34 +58,35 @@ gsap.to("progress", {
   scrollTrigger: { scrub: 0.3 },
 });
 
-function smoothScroll(target, duration) {
-  var target = document.querySelector(target);
-  var targetPosition = target.getBoundingClientRect().top;
-  var startPosition = window.pageYOffset;
-  var distance = targetPosition - startPosition;
-  var startTime = null;
+// Detect if a link's href goes to the current page
+function getSamePageAnchor (link) {
+  if (
+    link.protocol !== window.location.protocol ||
+    link.host !== window.location.host ||
+    link.pathname !== window.location.pathname ||
+    link.search !== window.location.search
+  ) {
+    return false;
+  }
 
-  function animation(currentTime) {
-    if (startTime === null) startTime = currentTime;
-    var timeElapsed = currentTime - startTime;
-    var run = ease(timeElapsed, startPosition, distance, duration);
-    window.scrollTo(0, run);
-    if (timeElapsed < duration) requestAnimationFrame(animation);
-  }
-  function ease(t, b, c, d) {
-    t /= d / 2;
-    if (t < 1) return (c / 2) * t * t * t + b;
-    t -= 2;
-    return (c / 2) * (t * t * t + 2) + b;
-  }
-  requestAnimationFrame(animation);
+  return link.hash;
 }
-var aboutme = document.querySelector(".scrolla");
-var services = document.querySelector(".services");
-aboutme.addEventListener("click", function () {
-  smoothScroll("#aboutme", 2000);
+
+// Scroll to a given hash, preventing the event given if there is one
+function scrollToHash(hash, e) {
+  const elem = hash ? document.querySelector(hash) : false;
+  if(elem) {
+    if(e) e.preventDefault();
+    gsap.to(window, {scrollTo: elem});
+  }
+}
+
+// If a link's href is within the current page, scroll to it instead
+document.querySelectorAll('a[href]').forEach(a => {
+  a.addEventListener('click', e => {
+    scrollToHash(getSamePageAnchor(a), e);
+  });
 });
 
-services.addEventListener("click", function () {
-  smoothScroll("#services", 2000);
-});
+// Scroll to the element in the URL's hash on load
+scrollToHash(window.location.hash);
