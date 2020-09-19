@@ -1,4 +1,3 @@
-jQuery(function($) {
   // bootstrap scrollspy
   $("body").scrollspy({ target: "#navie" });
 
@@ -78,4 +77,3 @@ jQuery(function($) {
       $(this).addClass("active").siblings().removeClass("active");
     });
   });
-});
