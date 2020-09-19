@@ -8,11 +8,13 @@
    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
    <meta http-equiv="X-UA-Compatible" content="IE=7" />
 
-   <title>Home | Abiodun Digital Hub</title>
+   <title>Abiodun Digital Hub</title>
 
    <!-- ========== Google Font ========== -->
    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:wght@400;500;700&display=swap"
       rel="stylesheet" />
+
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
    <!-- ========== Favicons ==========  -->
    <link rel="icon" type="image/jpg" sizes="40x40" href="favicon/favicon.jpg" />
@@ -23,6 +25,7 @@
    <!-- ========== Bootstrap StyleSheet ========== -->
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
 
+  <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
    <!-- ========== Libraries  ==========-->
 
    <link rel="stylesheet"
@@ -31,20 +34,23 @@
    <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
    <!-- ========== Custom StyleSheet ========== -->
    <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body  data-spy="scroll" data-target="#navie" data-offset="100">
+<body data-spy="scroll" data-target="#navie" data-offset="100">
+
    <!-- scroll progress bar indicator -->
    <progress max="100" value="0"></progress>
 
-   <!-- ========== Header Section Begins Here ========== -->
+  <!-- ========== Header Section Begins Here ========== -->
    <header id="header">
       <nav id="navie" class="navbar navbar-expand-md fixed-top">
          <div class="container">
             <a class="navbar-brand" href="index.html">
-               <img class="profile-logo" src="image/logo.png" alt="profile-logo" /></a>
+               <img loading="lazy"  class="profile-logo" src="image/logo.png" alt="profile-logo" /></a>
 
               <ul class="navbar-nav nav-pills ml-auto" >
                 <li class="nav-item">
@@ -53,11 +59,11 @@
                </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link scroll" href="#aboutme">
+                  <a class="nav-link scrolla" href="#">
                   <i class="far fa-address-card"></i> About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link scroll" href="#services">
+                  <a class="nav-link services" href="#">
                   <i class="fab fa-usps"></i> Services</a>
                 </li>
                 <li class="nav-item" >
@@ -107,14 +113,16 @@
    </header>
    <!-- ========== Header Section Ends Here ========== -->
 
-   <main >
+
+   <main>
       
       <!-- ========== Intro Section Begins Here ========== -->
       <div id="intro" class="intro pb-3">
+         
          <div class="container">
             <div class="row">
                <div class="col-md-6">
-                  <div
+                  <div 
                      class="intro-box">
                      <h4>
                         Lorem ipsum dolor sit amet consectetur adipisicing
@@ -153,8 +161,9 @@
               <div class="col-lg-4">
                 <div id="drawer-content">
                      <a href="index.html"> <i class="fas fa-home"></i> </a>
-                    <a class="scroll" href="#aboutme"> <i class="far fa-address-card"></i> </a>
-                    <a class="scroll" href="#services"> <i class="fab fa-usps"></i>  </a>
+                    <a  href="#"> <i class=" far fa-address-card"></i> </a>
+                    <a  class="scrolla" href="#aboutme"> <i class=" far fa-address-card"></i> </a>
+                    <a class="services" href="#services"> <i class="fab fa-usps"></i>  </a>
                     <a class="scroll" href="#portfolio"> <i class="fas fa-briefcase"></i> </a>
                     <a  href="blog.html"><i class="fab fa-blogger-b"></i>  </a>
                     <a class="scroll" href="#contact"><i class="fas fa-address-book"></i>  </a>
@@ -170,170 +179,165 @@
       </div>
       <!-- ========== Intro Section Ends Here ========== -->
 
+
       <!-- ========== About Me section Begins here ========== -->
-      <section id="aboutme" >
-        <div class="container">
-            <div class="section-header">
-               <h5 class="header-blue">About Me</h5>
-            </div>
-            <div class="row mt-5 mb-5">
-               <div class="col-lg-4">
-                  <div class="profile-image">
-                     <img src="image/profile-image.jpg" class="img-fluid" alt="profile-image">
-                  </div>
-               </div>
-               <div  class="col-lg-8 pt-3">
-                  <div class="card">
-                     <div class="card-body">
-                        <h4 class="card-title">
-                           Voluptatem dignissimos provident quasi corporis
-                        </h4>
-                     </div>
-                     <div class="card-text">
-                        <p>
-                           eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                        <ul class="list-unstyled">
-                           <li>
-                              <i class="far fa-thumbs-up"></i> Ullamco laboris nisi ut aliquip
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                              ex ea commodo consequat.
-                           </li>
-                           <li>
-                              <i class="far fa-thumbs-up"></i></i> Duis aute irure dolor in
-                              reprehenderit in voluptate velit.
-                           </li>
-                           <li>
-                              <i class="far fa-thumbs-up"></i></i> Iure at voluptas aspernatur
-                              dignissimos doloribus repudiandae.
-                           </li>
-                        </ul>
-                        <p>
-                           Voluptas nisi in quia excepturi nihil voluptas nam et ut.
-                           Expedita omnis eum consequatur non. Sed in asperiores aut
-                        </p>
-                     </div>
-                  </div>
-                  
-
-                  
-               </div>
-            </div>
-
-            <div class="row mt-4 mb-4">
-               <div class="col-lg-8 order-sm-2">
-                  <h3>
-                     Web Development
-                  </h3>
-                  <hr>
-                  <p>
-                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est aut beatae accusamus saepe nisi
-                     quaerat ea earum non consectetur repellendus!
-                  </p>
-                  <ul class="list-unstyled">
-                     <li>
-                        <i class="far fa-hand-point-right"></i>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam laborum explicabo nam
-                        debitis, aut quam.
-                     </li>
-                     <li>
-                        <i class="far fa-hand-point-right"></i>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam laborum explicabo nam
-                        debitis, aut quam.
-                     </li>
-                     <li>
-                        <i class="far fa-hand-point-right"></i>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam laborum explicabo nam
-                        debitis, aut quam.
-                     </li>
-                  </ul>
-                  <p>
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo similique illum cupiditate et, in
-                     porro soluta quibusdam molestiae alias iusto.
-                  </p>
-               </div>
-               <div data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease" class="col-lg-4 order-sm-1">
-                  <img src="image/web-development.png" class="img-fluid" alt="web-development-image" />
-               </div>
-
-            </div>
-
-            <div class="row mt-4 mb-4">
-               <div  class="col-lg-8  ">
-                  <h3>
-                     UI/UX Design
-                  </h3>
-                  <hr>
-                  <p>
-                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est aut beatae accusamus saepe nisi
-                     quaerat ea earum non consectetur repellendus!
-                  </p>
-                  <ul class="list-unstyled">
-                     <li>
-                        <i class="fa fa-check-circle"></i>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam laborum explicabo nam
-                        debitis, aut quam.
-                     </li>
-                     <li>
-                        <i class="fa fa-check-circle"></i>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam laborum explicabo nam
-                        debitis, aut quam.
-                     </li>
-                     <li>
-                        <i class="fa fa-check-circle"></i>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam laborum explicabo nam
-                        debitis, aut quam.
-                     </li>
-                  </ul>
-                  <p>
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo similique illum cupiditate et, in
-                     porro soluta quibusdam molestiae alias iusto.
-                  </p>
-               </div>
-               <div data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease" class="col-lg-4 ">
-                  <img src="image/ui-ux-design.jpg" class="img-fluid" alt="ui-ux-design-image" />
-               </div>
-            </div>
-
-            <div class="row mt-4 mb-4">
-               <div  class="col-lg-8 order-sm-2">
-                  <h3>
-                     Digital Marketing
-                  </h3>
-                  <hr>
-                  <p>
-                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est aut beatae accusamus saepe nisi
-                     quaerat ea earum non consectetur repellendus!
-                  </p>
-                  <ul class="list-unstyled">
-                     <li>
-                        <i class="far fa-arrow-alt-circle-right"></i>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam laborum explicabo nam
-                        debitis, aut quam.
-                     </li>
-                     <li>
-                        <i class="far fa-arrow-alt-circle-right"></i>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam laborum explicabo nam
-                        debitis, aut quam.
-                     </li>
-                     <li>
-                        <i class="far fa-arrow-alt-circle-right"></i>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam laborum explicabo nam
-                        debitis, aut quam.
-                     </li>
-                  </ul>
-                  <p>
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo similique illum cupiditate et, in
-                     porro soluta quibusdam molestiae alias iusto.
-                  </p>
-               </div>
-
-               <div  class="col-lg-4 order-sm-1">
-                  <img src="image/digital-marketing.jpg" class="img-fluid" alt="digital-marketing-image" />
-               </div>
-            </div>
+      <section id="aboutme">
+        
+      <div class="container">
+        
+        <div class="section-header">
+               <h5 class="header-blue ">About Me</h5>
         </div>
+        <div class="row">
+          <div class="col-md-4 mt-4 mb-3" data-aos="fade-right">
+            <div class="profile-image">
+            <img loading="lazy"  src="image/profile-image.jpg" class="img-fluid" alt="" />
+            </div>
+          </div>
+          <div class="col-md-8 pt-4 mt-2" data-aos="fade-up">
+            <h3>
+              Voluptatem dignissimos provident
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <ul class="list-unstyled">
+              <li>
+                <i class="far fa-thumbs-up"></i>  Ullamco laboris nisi ut aliquip ex
+                ea commodo consequat.
+              </li>
+              <li>
+                 <i class="far fa-thumbs-up"></i> Duis aute irure dolor in
+                reprehenderit in voluptate velit.
+              </li>
+              <li>
+                <i class="far fa-thumbs-up"></i>  Iure at voluptas aspernatur
+                dignissimos doloribus repudiandae.
+              </li>
+              <li>
+                <i class="far fa-thumbs-up"></i>  Est ipsa assumenda id facilis
+                nesciunt placeat sed doloribus praesentium.
+              </li>
+            </ul>
+            <p>
+              Voluptas nisi in quia excepturi nihil voluptas nam et ut. Expedita
+              omnis eum consequatur non. Sed in asperiores aut repellendus.
+              Error quisquam ab maiores. Quibusdam sit in officia
+            </p>
+          </div>
+        </div>
+
+        <div class="row mt-4 mb-3">
+          <div class="col-md-4 order-1 order-md-2" data-aos="fade-left">
+            <img loading="lazy"  src="image/web-development.png" class="img-fluid " alt="" />
+          </div>
+          <div class="col-md-8 pt-5 order-2 order-md-1" data-aos="fade-up">
+            <h3>Corporis temporibus maiores provident</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+              <ul class="list-unstyled">
+                     <li>
+                        <i class="far fa-arrow-alt-circle-right"></i>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam laborum explicabo nam
+                        debitis, aut quam.
+                     </li>
+                     <li>
+                        <i class="far fa-arrow-alt-circle-right"></i>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam laborum explicabo nam
+                        debitis, aut quam.
+                     </li>
+                     <li>
+                        <i class="far fa-arrow-alt-circle-right"></i>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam laborum explicabo nam
+                        debitis, aut quam.
+                     </li>
+                  </ul>
+            <p>
+              Inventore id enim dolor dicta qui et magni molestiae. Mollitia
+              optio officia illum ut cupiditate eos autem. Soluta dolorum
+              repellendus repellat amet autem rerum illum in. Quibusdam
+              
+            </p>
+          </div>
+        </div>
+
+        <div class="row mt-4 mb-3">
+          <div class="col-md-4" data-aos="fade-right">
+            <img loading="lazy"  src="image/ui-ux-design.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="col-md-8 pt-5" data-aos="fade-up">
+            <h3>
+              Sunt consequatur ad ut est nulla consectetur r
+            </h3>
+            <p>
+              Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus
+              quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas
+              dolor doloremque.
+            </p>
+            <ul class="list-unstyled">
+              <li>
+               <i class="far fa-hand-point-right"></i> Ullamco laboris nisi ut aliquip ex
+                ea commodo consequat.
+              </li>
+              <li>
+               <i class="far fa-hand-point-right"></i> Duis aute irure dolor in
+                reprehenderit in voluptate velit.
+              </li>
+              <li>
+               <i class="far fa-hand-point-right"></i> Facilis ut et voluptatem aperiam.
+                Autem soluta ad fugiat.
+              </li>
+            </ul>
+            <p>
+              Qui consequatur temporibus. Enim et corporis sit sunt harum
+              praesentium suscipit ut voluptatem. Et nihil magni debitis
+              consequatur est.
+            </p>
+         
+          </div>
+        </div>
+
+        <div class="row  mt-4 mb-3">
+          <div class="col-md-4 order-1 order-md-2" data-aos="fade-left">
+            <img loading="lazy"  src="image/digital-marketing.jpg"  class="img-fluid" alt="" />
+          </div>
+          <div class="col-md-8 pt-5 order-2 order-md-1" data-aos="fade-up">
+            <h3>
+              Quas et necessitatibus eaque impedit 
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute eiusmod tempor incididunt ut labore et dolore 
+            </p>
+            
+            <ul class="list-unstyled">
+              <li>
+                 <i class="fa fa-check-circle"></i> Et praesentium laboriosam
+                architecto nam .
+              </li>
+              <li>
+                 <i class="fa fa-check-circle"></i> Eius et voluptate. Enim earum
+                tempore aliquid. Nobis et sunt consequatur. Aut repellat in
+                numquam velit quo dignissimos et.
+              </li>
+              <li>
+                 <i class="fa fa-check-circle"></i> Facilis ut et voluptatem aperiam.
+                Autem soluta ad fugiat.
+              </li>
+            </ul>
+            <p>
+            
+              eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est
+              laborum
+            </p>
+          </div>
+        </div>
+      </div>
       </section>
+      
       <!-- ========== About Me  section Ends here ========== -->
 
       <!-- ========== Services section Begins here ========== -->
@@ -344,11 +348,11 @@
             </div>
 
             <div class="row mt-5 mb-5">
-               <div 
-                  class="col-lg-6 col-md-6  mt-3 mb-3">
+                <div  
+                  class=" col-lg-6 col-md-6  mt-3 mb-3">
                   <div class="card hover-border-blue pt-3">
                      <div class="icon">
-                        <img src="image/web-development.svg" alt="" />
+                        <img loading="lazy"  src="image/web-development.svg" alt="" />
                      </div>
                      <div class="card-body">
                         <h5 class="card-title">Web Development</h5>
@@ -366,10 +370,10 @@
                </div>
 
                <div
-                  class="col-lg-6 col-md-6 mt-3 mb-3">
+                  class="  col-lg-6 col-md-6 mt-3 mb-3">
                   <div class="card hover-border-blue pt-3">
                      <div class="icon">
-                        <img src="image/digital marketing.svg" alt="" />
+                        <img loading="lazy"  src="image/digital marketing.svg" alt="" />
                      </div>
                      <div class="card-body">
                         <h5 class="card-title">Digital Marketing</h5>
@@ -385,12 +389,12 @@
                      </div>
                   </div>
                </div>
-
-               <div
-                  class="col-lg-6 col-md-6 mt-3 mb-3">
+               
+                <div
+                  class=" col-lg-6 col-md-6 mt-3 mb-3">
                   <div class="card hover-border-blue pt-3">
                      <div class="icon">
-                        <img src="image/seo.svg" alt="" />
+                        <img loading="lazy"  src="image/seo.svg" alt="" />
                      </div>
                      <div class="card-body">
                         <h5 class="card-title">Web Content</h4>
@@ -408,10 +412,10 @@
                </div>
 
                <div 
-                  class="col-lg-6 col-md-6 mt-3 mb-3">
+                  class=" col-lg-6 col-md-6 mt-3 mb-3">
                   <div class="card hover-border-blue pt-3">
                      <div class="icon">
-                        <img src="image/ui-ux design.svg" alt="" />
+                        <img loading="lazy"  src="image/ui-ux design.svg" alt="" />
                      </div>
                      <div class="card-body">
                         <h5 class="card-title">UI/UX Design</h5>
@@ -427,6 +431,7 @@
                      </div>
                   </div>
                </div>
+               
             </div>
          </div>
       </section>
@@ -454,7 +459,7 @@
             <div class="row portfolio-container mt-4">
                <div class="col-lg-4 col-md-6 portfolio-item javascript mb-3">
                   <div class="portfolio-wrap">
-                     <img src="image/portfolio/js-project1.jpg" class="img-fluid" alt="" />
+                     <img loading="lazy"  src="image/portfolio/js-project1.jpg" class="img-fluid" alt="" />
                      <div class="portfolio-info">
                         <h4><a href="#">App 1</a></h4>
                         <p>App</p>
@@ -469,7 +474,7 @@
 
                <div class="col-lg-4 col-md-6 portfolio-item web" data-wow-delay="0.1s">
                   <div class="portfolio-wrap">
-                     <img src="image/portfolio/web-dev3.jpg" class="img-fluid" alt="" />
+                     <img loading="lazy"  src="image/portfolio/web-dev3.jpg" class="img-fluid" alt="" />
                      <div class="portfolio-info">
                         <h4><a href="#">Web 3</a></h4>
                         <p>Web</p>
@@ -484,7 +489,7 @@
 
                <div class="col-lg-4 col-md-6 portfolio-item javascript" data-wow-delay="0.2s">
                   <div class="portfolio-wrap">
-                     <img src="image/portfolio/js-project2.jpg" class="img-fluid" alt="" />
+                     <img loading="lazy"  src="image/portfolio/js-project2.jpg" class="img-fluid" alt="" />
                      <div class="portfolio-info">
                         <h4><a href="#">App 2</a></h4>
                         <p>App</p>
@@ -499,7 +504,7 @@
 
                <div class="col-lg-4 col-md-6 portfolio-item design">
                   <div class="portfolio-wrap">
-                     <img src="image/portfolio/ui-ux-design2.jpg" class="img-fluid" alt="" />
+                     <img loading="lazy"  src="image/portfolio/ui-ux-design2.jpg" class="img-fluid" alt="" />
                      <div class="portfolio-info">
                         <h4><a href="#">Card 2</a></h4>
                         <p>Card</p>
@@ -514,7 +519,7 @@
 
                <div class="col-lg-4 col-md-6 portfolio-item web" data-wow-delay="0.1s">
                   <div class="portfolio-wrap">
-                     <img src="image/portfolio/web-dev2.jpg" class="img-fluid" alt="" />
+                     <img loading="lazy"  src="image/portfolio/web-dev2.jpg" class="img-fluid" alt="" />
                      <div class="portfolio-info">
                         <h4><a href="#">Web 2</a></h4>
                         <p>Web</p>
@@ -529,7 +534,7 @@
 
                <div class="col-lg-4 col-md-6 portfolio-item javascript" data-wow-delay="0.2s">
                   <div class="portfolio-wrap">
-                     <img src="image/portfolio/js-project3.jpg" class="img-fluid" alt="" />
+                     <img loading="lazy"  src="image/portfolio/js-project3.jpg" class="img-fluid" alt="" />
                      <div class="portfolio-info">
                         <h4><a href="#">App 3</a></h4>
                         <p>App</p>
@@ -544,7 +549,7 @@
 
                <div class="col-lg-4 col-md-6 portfolio-item design">
                   <div class="portfolio-wrap">
-                     <img src="image/portfolio/ui-ux-design1.jpg" class="img-fluid" alt="" />
+                     <img loading="lazy"  src="image/portfolio/ui-ux-design1.jpg" class="img-fluid" alt="" />
                      <div class="portfolio-info">
                         <h4><a href="#">Card 1</a></h4>
                         <p>Card</p>
@@ -559,7 +564,7 @@
 
                <div class="col-lg-4 col-md-6 portfolio-item design" data-wow-delay="0.1s">
                   <div class="portfolio-wrap">
-                     <img src="image/portfolio/ui-ux-design3.jpg" class="img-fluid" alt="" />
+                     <img loading="lazy"  src="image/portfolio/ui-ux-design3.jpg" class="img-fluid" alt="" />
                      <div class="portfolio-info">
                         <h4><a href="#">Card 3</a></h4>
                         <p>Card</p>
@@ -574,7 +579,7 @@
 
                <div class="col-lg-4 col-md-6 portfolio-item web" data-wow-delay="0.2s">
                   <div class="portfolio-wrap">
-                     <img src="image/portfolio/web-dev1.jpg" class="img-fluid" alt="" />
+                     <img loading="lazy"  src="image/portfolio/web-dev1.jpg" class="img-fluid" alt="" />
                      <div class="portfolio-info">
                         <h4><a href="#">Web 1</a></h4>
                         <p>Web</p>
@@ -592,7 +597,7 @@
       <!-- ========== Porfolio section Ends here========== -->
 
       <!-- ============= What to Expect Section Begins here =========-->
-      <section id="patronize">
+      <section  id="patronize">
          <div class="container">
             <div class="section-header">
                <h5 class="header-blue">What to Expect</h5>
@@ -600,7 +605,7 @@
 
             <div class="row mt-5 mb-1">
                <div 
-                  class="col-lg-4 col-md-6 mt-3 mb-3">
+                  class="  col-lg-4 col-md-6 mt-3 mb-3">
                   <div class="card">
                      <div class="card-body">
                         <h5 class="card-title">Corporis dolorem</h5>
@@ -721,7 +726,7 @@
                   </div>
                </div>
 
-               <div class="col-lg-6 col-md-6">
+               <div class=" col-lg-6 col-md-6">
                   <div class="card hover-border">
                      <div class="card-body">
                         <div class="contact">
@@ -786,7 +791,7 @@
                      <div class="card mb-4">
                         <div class="client-num client-order">1</div>
                         <div class="card-body">
-                           <img src="image/test3.png" alt="">
+                           <img loading="lazy"  src="image/test3.png" alt="">
                            <div class="client-name">Lorem, ipsum dolor.</div>
 
                            <p class="card-text">
@@ -801,7 +806,7 @@
                       <div class="card mb-4">
                         <div class="client-num client-order">2</div>
                         <div class="card-body">
-                           <img src="image/test3.png" alt="">
+                           <img loading="lazy"  src="image/test3.png" alt="">
                            <div class="client-name">Lorem, ipsum dolor.</div>
 
                            <p class="card-text">
@@ -816,7 +821,7 @@
                       <div class="card mb-4">
                         <div class="client-num client-order">3</div>
                         <div class="card-body">
-                           <img src="image/test3.png" alt="">
+                           <img loading="lazy"  src="image/test3.png" alt="">
                            <div class="client-name">Lorem, ipsum dolor.</div>
 
                            <p class="card-text">
@@ -831,7 +836,7 @@
                       <div class="card mb-4">
                         <div class="client-num client-order">4</div>
                         <div class="card-body">
-                           <img src="image/test3.png" alt="">
+                           <img loading="lazy"  src="image/test3.png" alt="">
                            <div class="client-name">Lorem, ipsum dolor.</div>
 
                            <p class="card-text">
@@ -846,7 +851,7 @@
                       <div class="card mb-4">
                         <div class="client-num client-order"></div>
                         <div class="card-body">
-                           <img src="image/test3.png" alt="">
+                           <img loading="lazy"  src="image/test3.png" alt="">
                            <div class="client-name">Lorem, ipsum dolor.</div>
 
                            <p class="card-text">
@@ -866,16 +871,17 @@
       </section>
       <!-- ========== Testimonial Section Ends Here ========== -->
 
-   </main>
+   </main >
     
-   <!-- ========== Footer Section Begins Here ========== -->
-   <footer id="footer">
+
+    <!-- ========== Footer Section Begins Here ========== -->
+    <footer id="footer">
       <div class="container">
          <div class="row">
             <div class="col-lg-4 col-md-6 mb-4">
                <div class="card">
                   <div class="card-body">
-                     <img class="footer-logo" src="image/footer-logo.jpg" alt="footer-logo" />
+                     <img loading="lazy"  class="footer-logo" src="image/footer-logo.jpg" alt="footer-logo" />
                      <h6 class="card-title">Abiodun Digital Hub</h6>
                      <p class="card-text">
                         Deleniti optio et nisi dolorem debitis. Aliquam nobis
@@ -961,11 +967,10 @@
             <a href="#"> <strong>Abiodun Samuel</strong> </a>
          </div>
       </div>
-   </footer>
-   <!-- ========== Footer Section Ends Here ========== -->
-
-
-
+    </footer>
+    <!-- ========== Footer Section Ends Here ========== -->
+    
+  
    <!-- ========== Back to the top button ========== -->
    <div class="back-top">
       <i class="fas fa-arrow-alt-circle-up"></i>
@@ -987,14 +992,18 @@
 
    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" ></script>
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
 
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
 
-   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
    <!-- main jquery-script file -->
-   <script src="js/jquery-script.js"></script>
+  <script src="js/jquery-script.js"></script>
 
    <!-- main  javascript file -->
    <script src="js/script.js"></script>
