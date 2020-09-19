@@ -1,34 +1,34 @@
-  // bootstrap scrollspy
-  $("body").scrollspy({ target: "#navie" });
+  // // bootstrap scrollspy
+  // $("body").scrollspy({ target: "#navie" });
 
-  // Smooth scrolling
-  var scrollLink = $(".scroll");
-  scrollLink.click(function (e) {
-    e.preventDefault();
-    $("body,html").animate(
-      {
-        scrollTop: $(this.hash).offset().top,
-      },
-      { duration: 2500, easing: "easeInOutBack" }
-    );
-  });
+  // // Smooth scrolling
+  // var scrollLink = $(".scroll");
+  // scrollLink.click(function (e) {
+  //   e.preventDefault();
+  //   $("body,html").animate(
+  //     {
+  //       scrollTop: $(this.hash).offset().top,
+  //     },
+  //     { duration: 2500, easing: "easeInOutBack" }
+  //   );
+  // });
 
-  //back to the top button
-  $(window).scroll(function () {
-    if ($(window).scrollTop() > 100) {
-      $(".back-top").fadeIn(1000);
-    } else {
-      $(".back-top").fadeOut(1000);
-    }
-  });
-  $(".back-top").click(function () {
-    $("html, body").animate(
-      {
-        scrollTop: 0,
-      },
-      { duration: 2000, easing: "swing" }
-    );
-  });
+  // //back to the top button
+  // $(window).scroll(function () {
+  //   if ($(window).scrollTop() > 100) {
+  //     $(".back-top").fadeIn(1000);
+  //   } else {
+  //     $(".back-top").fadeOut(1000);
+  //   }
+  // });
+  // $(".back-top").click(function () {
+  //   $("html, body").animate(
+  //     {
+  //       scrollTop: 0,
+  //     },
+  //     { duration: 2000, easing: "swing" }
+  //   );
+  // });
 
   //  Testimonial Carousel
   $("#client-testimonials").owlCarousel({
