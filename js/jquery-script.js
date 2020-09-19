@@ -1,11 +1,9 @@
-
-$(document).ready(function () {
+jQuery(function($) {
   // bootstrap scrollspy
   $("body").scrollspy({ target: "#navie" });
 
   // Smooth scrolling
   var scrollLink = $(".scroll");
-
   scrollLink.click(function (e) {
     e.preventDefault();
     $("body,html").animate(
@@ -54,6 +52,10 @@ $(document).ready(function () {
         items: 3,
       },
     },
+  });
+
+  $(function () {
+    FastClick.attach(document.body);
   });
 
   // matchheight

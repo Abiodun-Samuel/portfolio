@@ -1,3 +1,4 @@
+
 // drawer menu
 function myDrawer() {
   var showDrawer = document.getElementById("drawer-content");
@@ -23,7 +24,6 @@ const navSlide = () => {
 };
 navSlide();
 
-
 // ========== Navbar scroll effects ==========
 window.onscroll = function () {
   myFunction();
@@ -46,6 +46,9 @@ var typed = new Typed(".type", {
   backSpeed: 50,
   loop: true,
 });
+
+// animate on scroll
+AOS.init();
 
 // scroll progress bar
 gsap.registerPlugin(ScrollTrigger);
