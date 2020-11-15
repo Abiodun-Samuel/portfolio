@@ -62,27 +62,6 @@ p {
   left: 0%;
   width: 100%;
 }
-section {
-  padding: 4rem 0;
-  scroll-snap-align: start;
-}
-section .section-header {
-  text-align: center;
-}
-section .header-red {
-  background-color: #ff4081;
-  color: #f8f9fa;
-  display: inline-block;
-  padding: 5px 20px;
-  font-weight: bold;
-}
-section .header-blue {
-  background-color: #2196f3;
-  color: #f8f9fa;
-  display: inline-block;
-  padding: 5px 20px;
-  font-weight: bold;
-}
 
 /*========== global styling ends here==========*/
 
@@ -174,6 +153,98 @@ progress::-moz-progress-bar {
   transition: 450ms;
   padding: 0px 15px;
 }
+
+@media only screen and (max-width: 768px) {
+  .navbar .navbar-brand .profile-logo {
+    width: 40px;
+    height: 40px;
+  }
+  .navbar {
+    height: 65px;
+    padding: 0px 15px;
+    box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.15);
+  }
+  .navbar-nav {
+    position: absolute;
+    right: -100%;
+    height: 100vh;
+    top: 65px;
+    width: 65%;
+    background-color: #f5f5f5;
+    padding-top: 15px;
+    border-left: 1px solid rgba(0, 0, 0, 0.125);
+  }
+
+  .navbar .container .navbar-nav .nav-link {
+    margin-bottom: 5px;
+  }
+  .burger,
+  .navbar .container .easy-nav {
+    display: block;
+  }
+  .nav-active {
+    right: 0px;
+  }
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+    background-color: #ff4081;
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+    background-color: #ff4081;
+  }
+  .burg {
+    border: 2px solid #ff4081;
+  }
+  .navbar .container .nav-contact {
+    display: block;
+    padding-left: 15px;
+  }
+  .navbar .container .nav-contact ul li {
+    list-style: none;
+    font-size: 14px;
+  }
+  .navbar .container .nav-contact a {
+    padding-right: 5px;
+    color: #757575;
+    font-size: 18px;
+  }
+  .navbar .container .nav-contact a .fa-facebook {
+    color: #4267b2;
+  }
+  .navbar .container .nav-contact a .fa-whatsapp {
+    color: #4ac959;
+  }
+  .navbar .container .nav-contact a .fa-twitter {
+    color: #00acee;
+  }
+  .navbar .container .nav-contact a .fa-instagram {
+    color: #e1306c;
+  }
+  .navbar .container .nav-contact a .fa-linkedin {
+    color: #2867b2;
+  }
+  .navbar .container .nav-contact a .fa-github {
+    color: #333;
+  }
+  .navbar .container .nav-contact a .fa-telegram-plane {
+    color: #0088cc;
+  }
+  .sticky {
+    width: 100%;
+    height: 55px;
+    transition: 450ms;
+    padding: 0px 15px;
+  }
+  .sticky .navbar-nav {
+    height: 100vh;
+    top: 55px;
+    transition: 450ms;
+  }
+}
 /*========== Nav Section Style Ends Here==========*/
 
 /* ========== Intro Section Style Begins here========== */
@@ -192,6 +263,7 @@ progress::-moz-progress-bar {
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
   background-size: cover;
+  height: 100vh;
 }
 .carousel-caption {
   color: #212121;
@@ -252,7 +324,7 @@ progress::-moz-progress-bar {
   font-size: 20px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
   .carousel-caption {
     bottom: 20px;
   }
@@ -264,12 +336,13 @@ progress::-moz-progress-bar {
   .carousel-item .intro-box button {
     margin: 0px 13px 0 0;
   }
+  .w-100 {
+    height: calc(100vh-65px);
+  }
+  .carousel-item {
+    height: calc(100vh-65px);
+  }
 }
-/*.intro .drawer {
-  text-align: center;
-}
-
- */
 
 /* ========== Intro Section Style Ends========== */
 
@@ -922,155 +995,7 @@ progress::-moz-progress-bar {
 
 /* ==========Media Queries ==========  */
 
-/* ==========Media Queries for Nav==========  */
-
 @media only screen and (max-width: 768px) {
-  section {
-    padding-top: 1.5rem;
-    padding-bottom: 1rem;
-  }
-
-  .navbar .navbar-brand .profile-logo {
-    width: 40px;
-    height: 40px;
-  }
-  .navbar {
-    height: 65px;
-    padding: 0px 15px;
-    box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.15);
-  }
-  .navbar-nav {
-    position: absolute;
-    right: -100%;
-    height: 100vh;
-    top: 65px;
-    width: 65%;
-    background-color: #f5f5f5;
-    padding-top: 15px;
-    border-left: 1px solid rgba(0, 0, 0, 0.125);
-  }
-
-  .navbar .container .navbar-nav .nav-link {
-    margin-bottom: 5px;
-  }
-  .burger,
-  .navbar .container .easy-nav {
-    display: block;
-  }
-  .nav-active {
-    right: 0px;
-  }
-  .toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-    background-color: #ff4081;
-  }
-  .toggle .line2 {
-    opacity: 0;
-  }
-  .toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
-    background-color: #ff4081;
-  }
-  /* .no-scroll {
-    overflow: hidden;
-    transition: 450ms;
-  } */
-  .burg {
-    border: 2px solid #ff4081;
-  }
-  .navbar .container .nav-contact {
-    display: block;
-    padding-left: 15px;
-  }
-  .navbar .container .nav-contact ul li {
-    list-style: none;
-    font-size: 14px;
-  }
-  .navbar .container .nav-contact a {
-    padding-right: 5px;
-    color: #757575;
-    font-size: 18px;
-  }
-  .navbar .container .nav-contact a .fa-facebook {
-    color: #4267b2;
-  }
-  .navbar .container .nav-contact a .fa-whatsapp {
-    color: #4ac959;
-  }
-  .navbar .container .nav-contact a .fa-twitter {
-    color: #00acee;
-  }
-  .navbar .container .nav-contact a .fa-instagram {
-    color: #e1306c;
-  }
-  .navbar .container .nav-contact a .fa-linkedin {
-    color: #2867b2;
-  }
-  .navbar .container .nav-contact a .fa-github {
-    color: #333;
-  }
-  .navbar .container .nav-contact a .fa-telegram-plane {
-    color: #0088cc;
-  }
-  .sticky {
-    width: 100%;
-    height: 55px;
-    transition: 450ms;
-    padding: 0px 15px;
-  }
-  .sticky .navbar-nav {
-    height: 100vh;
-    top: 55px;
-    transition: 450ms;
-  }
-  .navbar .container .easy-nav a {
-    margin-right: 15px;
-    color: #2196f3;
-  }
-  .navbar .container .easy-nav a:hover {
-    color: #ff4081;
-  }
-  .navbar .container .easy-nav .mytooltip {
-    position: relative;
-    display: inline-block;
-  }
-  .navbar .container .easy-nav .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: #2196f3;
-    opacity: 0.89;
-    color: #fff;
-    font-weight: 500;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -60px;
-    z-index: 1;
-  }
-  .navbar .container .easy-nav .mytooltip .tooltiptext::after {
-    content: " ";
-    position: absolute;
-    bottom: 100%;
-    left: 45%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent #2196f3 transparent;
-  }
-  .navbar .container .easy-nav .mytooltip:hover .tooltiptext {
-    visibility: visible;
-  }
-  /* ==========Media Queries for Nav Ends here section==========  */
-
-  .intro-but {
-    text-align: center;
-  }
-
-  /* ======= Portfolio here section==========  */
-
   #portfolio .product .itemBox {
     width: 150px;
     height: 150px;
