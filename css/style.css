@@ -106,7 +106,7 @@ progress::-moz-progress-bar {
   z-index: 10000;
   transition: 450ms;
   background-color: #f5f5f5;
-  /* position: fixed; */
+  position: fixed;
 }
 .navbar .navbar-nav {
   transition: 450ms;
@@ -249,45 +249,46 @@ progress::-moz-progress-bar {
 
 /* ========== Intro Section Style Begins here========== */
 
-.carousel-indicators li {
-  background-color: #212121;
+.swiper-container {
+  width: 100%;
+  height: 100vh;
 }
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
-  display: none;
-}
-.w-100 {
-  height: 90vh;
-}
-.carousel-item {
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
+.swiper-slide.first {
+  background: url("../image/hero1.jpg");
   background-size: cover;
-  height: 90vh;
-
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.carousel-caption {
-  color: #212121;
-  right: 10%;
-  bottom: 80px;
-  left: 10%;
-  z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
+.swiper-slide.second {
+  background: url("../image/hero2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-
-.carousel-item .intro-box h4 {
+.swiper-slide.third {
+  background: url("../image/hero3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.swiper-slide {
+  padding-top: 220px;
+}
+.col-lg-auto {
+  max-width: 75%;
+  margin: auto;
+}
+.intro-text h4 {
   background-color: rgba(245, 245, 245, 0.9);
   color: #212121;
   padding: 10px 10px;
   border-radius: 5px;
   line-height: 1.3;
-  margin-bottom: 40px;
   font-weight: bold;
+  text-align: center;
 }
 
-.carousel-item .intro-box button {
+.intro-box button {
   font-weight: bold;
   padding: 6px 20px;
   border-radius: 5px;
@@ -325,6 +326,19 @@ progress::-moz-progress-bar {
   font-size: 20px;
 }
 
+@media only screen and (max-width: 768px) {
+  .col-lg-auto {
+    max-width: 90%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .col-lg-auto{
+    max-width: 100%;
+  }
+}
+/*
+.carousel-item 
+
 @media only screen and (max-width: 500px) {
   .carousel-caption {
     bottom: 20px;
@@ -343,7 +357,10 @@ progress::-moz-progress-bar {
   .carousel-item {
     height: calc(100vh-65px);
   }
-}
+  .carousel-item .intro-box button {
+    padding: 7px 25px;
+  }
+} */
 
 /* ========== Intro Section Style Ends========== */
 
