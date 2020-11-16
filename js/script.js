@@ -1,14 +1,3 @@
-
-// drawer menu
-function myDrawer() {
-  var showDrawer = document.getElementById("drawer-content");
-  if (showDrawer.style.opacity === "0") {
-    (showDrawer.style.opacity = "1"), (showDrawer.style.transition = "500ms");
-  } else {
-    (showDrawer.style.opacity = "0"), (showDrawer.style.transition = "500ms");
-  }
-  };
-
 // ========== Nav Toggle  toggle effects ==========
 const navSlide = () => {
   const burger = document.querySelector(".burger");
@@ -21,6 +10,10 @@ const navSlide = () => {
     burger.classList.toggle("toggle");
     burgerborder.classList.toggle("burg");
   });
+
+  // if (navmenu) {
+  //   navmenu.addEventListener.classList.remove("navbar-nav");
+  // }
 };
 navSlide();
 
@@ -37,15 +30,15 @@ function myFunction() {
   } else {
     nav.classList.remove("sticky");
   }
-  };
+}
 
 // ==========type js typing effect==========
-var typed = new Typed(".type", {
-  strings: ["Web Developer", "UI-UX Designer", "Digital Marketer"],
-  typeSpeed: 50,
-  backSpeed: 50,
-  loop: true,
-});
+// var typed = new Typed(".type", {
+//   strings: ["Web Developer", "UI-UX Designer", "Web Designer"],
+//   typeSpeed: 50,
+//   backSpeed: 50,
+//   loop: true,
+// });
 
 // animate on scroll
 AOS.init();
@@ -57,9 +50,12 @@ gsap.to("progress", {
   ease: "none",
   scrollTrigger: { scrub: 0.3 },
 });
+// var rule = CSSRulePlugin.getRule(".intro-text:after");
+// // gsap.from(".intro-box", { opacity: 0, duration: 1, y: -50 });
+// gsap.to(rule, { cssRule: { scaleX: 0 }, duration: 1.5 , ease: "power2.inOut"});
 
 // Detect if a link's href goes to the current page
-function getSamePageAnchor (link) {
+function getSamePageAnchor(link) {
   if (
     link.protocol !== window.location.protocol ||
     link.host !== window.location.host ||
@@ -74,14 +70,14 @@ function getSamePageAnchor (link) {
 // Scroll to a given hash, preventing the event given if there is one
 function scrollToHash(hash, e) {
   const elem = hash ? document.querySelector(hash) : false;
-  if(elem) {
-    if(e) e.preventDefault();
-    gsap.to(window, {scrollTo: elem});
+  if (elem) {
+    if (e) e.preventDefault();
+    gsap.to(window, { scrollTo: elem });
   }
 }
 // If a link's href is within the current page, scroll to it instead
-document.querySelectorAll('a[href]').forEach(a => {
-  a.addEventListener('click', e => {
+document.querySelectorAll("a[href]").forEach((a) => {
+  a.addEventListener("click", (e) => {
     scrollToHash(getSamePageAnchor(a), e);
   });
 });
@@ -89,3 +85,26 @@ document.querySelectorAll('a[href]').forEach(a => {
 // Scroll to the element in the URL's hash on load
 scrollToHash(window.location.hash);
 
+var mySwiper = new Swiper(".swiper-container", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+  autoplay: { delay: 500 },
+  speed: 5000,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+});

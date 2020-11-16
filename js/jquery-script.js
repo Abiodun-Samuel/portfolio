@@ -1,67 +1,75 @@
-  // bootstrap scrollspy
-  $("body").scrollspy({ target: "#navie" });
+// bootstrap scrollspy
+$("body").scrollspy({ target: "#navie" });
 
-  //back to the top button
-  $(window).scroll(function () {
-    if ($(window).scrollTop() > 100) {
-      $(".back-top").fadeIn(1000);
-    } else {
-      $(".back-top").fadeOut(1000);
-    }
-  });
-  // $(".back-top").click(function () {
-  //   $("html, body").animate(
-  //     {
-  //       scrollTop: 0,
-  //     },
-  //     { duration: 1500, easing: "swing" }
-  //   );
-  // });
-
-  //  Testimonial Carousel
-  $("#client-testimonials").owlCarousel({
-    loop: true,
-    center: true,
-    items: 3,
-    margin: 0,
-    autoplay: true,
-    dots: true,
-    autoplayTimeout: 3000,
-    smartSpeed: 450,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      768: {
-        items: 2,
-      },
-      1170: {
-        items: 3,
-      },
+//back to the top button
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 100) {
+    $(".back-top").fadeIn(1000);
+  } else {
+    $(".back-top").fadeOut(1000);
+  }
+});
+$(".back-top").click(function () {
+  $("html, body").animate(
+    {
+      scrollTop: 0,
     },
-  });
+    { duration: 1500, easing: "swing" }
+  );
+});
 
-  $(function () {
-    FastClick.attach(document.body);
-  });
+$(".logo-slide").slick({
+  infinite: true,
+  slidesToShow: 6,
+  slidesToScroll: 1,
+  autoplay:true,
+  autoplaySpeed: 500,
+});
 
-  // matchheight
-  $(".card").matchHeight();
+//  Testimonial Carousel
+$("#client-testimonials").owlCarousel({
+  loop: true,
+  center: true,
+  items: 3,
+  margin: 0,
+  autoplay: true,
+  dots: true,
+  autoplayTimeout: 3000,
+  smartSpeed: 450,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    768: {
+      items: 2,
+    },
+    1170: {
+      items: 3,
+    },
+  },
+});
 
-  // porfolio filter
+$(function () {
+  FastClick.attach(document.body);
+});
+
+// matchheight
+$(".card").matchHeight();
+
+// porfolio filter
+$(".portfolio-list").click(function () {
+  const value = $(this).attr("data-filter");
+  if (value == "all") {
+    $(".portfolio-item").show("1000");
+  } else {
+    $(".portfolio-item")
+      .not("." + value)
+      .hide("1000");
+    $(".portfolio-item")
+      .filter("." + value)
+      .show("1000");
+  }
   $(".portfolio-list").click(function () {
-    const value = $(this).attr("data-filter");
-    if (value == "all") {
-      $(".portfolio-item").show("1000");
-    } else {
-      $(".portfolio-item")
-        .not("." + value)
-        .hide("1000");
-      $(".portfolio-item")
-        .filter("." + value)
-        .show("1000");
-    }
-    $(".portfolio-list").click(function () {
-      $(this).addClass("active").siblings().removeClass("active");
-    });
+    $(this).addClass("active").siblings().removeClass("active");
   });
+});
