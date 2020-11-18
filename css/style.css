@@ -13,6 +13,7 @@ body {
   background-color: #ffffff;
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
+ overscroll-behavior: none;
   /* overflow-y: scroll; */
 }
 h1,
